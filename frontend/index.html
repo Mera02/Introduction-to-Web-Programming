@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zmaj Stanica</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/spapp.css" />
+
+    <!-- Bootstrap i fontovi -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Permanent+Marker&family=Poetsen+One&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Permanent+Marker&family=Poetsen+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/slike/logo.png" id="logo" class="">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item opcija">
+                        <a class="nav-link active" href="#homepage">POCETNA</a>
+                    </li>
+                    <li class="nav-item opcija">
+                        <a class="nav-link" href="#porcije">PORCIJE</a>
+                    </li>
+                    <li class="nav-item opcija">
+                        <a class="nav-link" href="#salate">SALATE,PECIVA I SL</a>
+                    </li>
+                    <li class="nav-item opcija">
+                        <a class="nav-link" href="#porcije">KOMBINACIJE</a>
+                    </li>
+                    <li class="nav-item opcija">
+                        <a class="nav-link" href="#salate">PIĆA</a>
+                    </li>
+                    <li class="nav-item opcija">
+                        <a class="nav-link" href="#salate">DEZERTI</a>
+                    </li>
+                    <li class="nav-item opcija">
+                        <a class="nav-link" href="#forma">ZAPOSLI SE</a>
+                    </li>
+                    <li class="nav-item opcija">
+                        <a class="nav-link" href="#pitanja">PITANJA</a>
+                    </li>
+                </ul>
+                <button id="themeSwitcher" class="btn btn-outline-secondary ms-auto" onclick="switchTheme()">Dark
+                    Mode</button>
+            </div>
+        </div>
+    </nav>
+
+    <section id="pageContent">
+        <main id="spapp" role="main">
+            <section id="homepage" data-load="pages/homepage.html">Pocetna</section>
+            <section id="porcije" data-load="pages/porcije.html">Porcije</section>
+            <section id="salate" data-load="pages/salate.html">Salate</section>
+            <section id="forma" data-load="pages/forma.html">Zaposli se</section>
+            <section id="register" data-load="pages/register.html">Registracija</section>
+            <section id="pitanja" data-load="pages/faq.html">Pitanja</section>
+        </main>
+    </section>
+    
+
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"
+        integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/cevap.js"></script>
+    <script src="assets/js/viewmore.js"></script>
+    <script src="assets/js/jquery.spapp.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/faq.js"></script>
+
+</body>
+
+</html>

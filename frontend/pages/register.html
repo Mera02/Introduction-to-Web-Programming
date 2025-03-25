@@ -1,0 +1,101 @@
+<div class="pozadina text-center">
+    <div class="logoime1">
+        <h1>Cevabdzinica Zmaj Stanica Sarajevo</h1>
+    </div> 
+</div>
+
+<div class="sektor6 d-flex align-items-center justify-content-center">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form id="registerForm" class="p-4 border rounded shadow bg-white">
+                    <h3 class="text-center mb-4">Registracija</h3>
+
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label for="prvoime" class="form-label">Ime</label>
+                            <input type="text" class="form-control" id="prvoime" name="prvoime" placeholder="Unesite ime">
+                            <span class="error text-danger" id="firstnameError"></span>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="lastnejm" class="form-label">Prezime</label>
+                            <input type="text" class="form-control" id="lastnejm" name="lastnejm" placeholder="Unesite prezime">
+                            <span class="error text-danger" id="lastnameError"></span>
+                        </div>
+                    </div>
+
+                    <div class="mt-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Unesite email">
+                        <span class="error text-danger" id="emailError"></span>
+                    </div>
+
+                    <div class="mt-3">
+                        <label for="phone" class="form-label">Broj telefona</label>
+                        <input type="tel" class="form-control" id="phone" name="phone" placeholder="Unesite broj telefona">
+                        <span class="error text-danger" id="phoneError"></span>
+                    </div>
+
+                    <div class="mt-3 position-relative">
+                        <label for="password" class="form-label">Šifra</label>
+                        <div class="input-group">
+                            <input type="password" class="form-control" id="password" name="password" placeholder="Unesite šifru">
+                            <button class="btn btn-outline-secondary" type="button" id="togglePassword">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                        </div>
+                        <span class="error text-danger" id="passwordError"></span>
+                    </div>
+
+                    <div class="mt-3">
+                        <label for="confirmPassword" class="form-label">Potvrdi šifru</label>
+                        <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" placeholder="Ponovite šifru">
+                        <span class="error text-danger" id="confirmPasswordError"></span>
+                    </div>
+
+                    <div class="d-grid mt-4">
+                        <button type="submit" class="btn btn-success">REGISTRUJ SE</button>
+                    </div>
+
+                    <div class="text-center mt-3">
+                        <p>Već imate račun? <a href="#forma">Prijavite se</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer mt-5">
+    <div class="container">
+        <div class="row text-center text-md-start">
+            <!-- Logo sekcija -->
+            <div class="col-md-3 d-flex justify-content-center justify-content-md-start">
+                <img src="/frontend/assets/slike/logo.png" alt="Logo" class="footer-logo">
+            </div>
+
+            <!-- Tekst dobrodošlice -->
+            <div class="col-md-3 d-flex align-items-center justify-content-center justify-content-md-start">
+                <p class="footer-text">Dobrodošli u najbolju ćevabdžinicu u gradu</p>
+            </div>
+
+            <!-- Navigacija -->
+            <div class="col-md-3">
+                <ul class="footer-menu">
+                    <li><a href="#">O NAMA</a></li>
+                    <li><a href="#">GALERIJA</a></li>
+                    <li><a href="#">KONTAKTIRAJTE NAS</a></li>
+                    <li><a href="/frontend/index.html#pitanja">FAQ</a></li>
+                </ul>
+            </div>
+
+            <!-- Kontakt informacije -->
+            <div class="col-md-3 text-center text-md-start">
+                <p class="footer-contact"><strong>+387 33 616 969</strong></p>
+                <p class="footer-contact">NOVO SARAJEVO PUT ŽIVOTA, SARAJEVO 71000</p>
+                <p class="footer-contact">PON – NED: 5:00 – 00:00</p>
+            </div>
+        </div>
+    </div>
+</footer>

@@ -1,0 +1,1041 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+}
+
+
+/* navbar */
+
+#logo{
+    height: 70px;
+    width: 200px;
+}
+
+.navbar{
+    background: rgba(76, 175, 80, 0.8)
+    
+}
+
+
+.opcija{
+    padding-left:20px;
+}
+
+.opcija a{
+    color: rgb(231, 231, 231);
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.opcija a:hover{
+    color: rgb(204, 204, 204);
+}
+
+/* pozadina */
+
+.pozadina {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../slike/pozadina.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+}
+
+.stanica {
+    background-image: url(../slike/titleBG.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; 
+    display: inline-block; 
+    padding: 0px 100px 10px 100px; /* Add padding for better spacing */
+}
+
+.logoime1 {
+    text-align: center;
+    max-width: 80%;
+    font-family: "Poetsen One", sans-serif;
+}
+
+.logoime1 h1 {
+    font-size: 100px;
+    line-height: 1.2;
+    margin: 0;
+}
+.pozadina2{
+    background-image: linear-gradient(#166b4a,#28c270,#166b4a);
+}
+/* CJENOVNIK */
+.cjenovnik{
+    display: flex;
+    justify-content: center;
+}
+
+.cjenovnik{
+    font-size: 4em;
+    font-family: "Poetsen One", sans-serif;
+    margin-bottom: 50px;
+    background-color: white;
+}
+.cjenovnik h2{
+    font-size: 2em;
+    color:#212529;
+}
+
+
+/* sektor 2 */
+
+.sektor2{
+    padding-bottom: 50px;
+}
+
+.cevapi1{
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+}
+.cevapi2{
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    
+}
+.cevapi{
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-weight: bold;
+}
+.klikni{
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(0, 0, 0);
+}
+
+/*kontakt*/
+
+.kontakt {
+    font-family: "Poetsen One", sans-serif;
+    background-color: white;
+}
+
+.kontakt1{
+    height: 100%;
+    width: 100%;
+}
+
+.kontakt1 img{
+    height: 100%;
+    width: 100%;
+}
+
+.kontakt{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.kontakt h2{
+    font-size: 130px;
+}
+
+.citat{
+    font-size: 25px;
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+
+/*FOOTER*/
+
+.footer {
+    background: #043927; /* Tamnozelena boja */
+    color: white;
+    padding: 40px 0;
+    margin-top: 50px;
+}
+
+.footer .footer-text {
+    margin: 0;
+    font-size: 16px;
+}
+
+
+.footer-logo{
+    max-width: 180px;  
+    height: auto;     
+    display: block;
+    margin: 0 auto;  
+    object-fit: contain;
+}
+
+
+
+.footer-menu {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.footer-menu li {
+    margin-bottom: 8px;
+}
+
+.footer-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-menu a:hover {
+    color: #FFD700; 
+}
+
+
+.footer-contact {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+
+
+/* NOVA FORMA */
+
+
+
+
+
+
+
+/* strenght password*/
+
+/* PORCIJE NOVI PAGE */
+
+.porcijenaslov h2{
+    font-family: "Poetsen One", sans-serif;
+    font-size: 110px;
+    display: flex;
+    justify-content: center;
+    padding-top: 150px;
+}
+
+.porcije{
+    padding-top: 100px;
+}
+
+
+.jelo{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.jelo img{
+    height: 200px;
+    width: 200px;
+    margin-right: 20px;
+    border-radius: 100px;
+}
+
+.cijene{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.kombinacijenaslov h3{
+    font-family: "Poetsen One", sans-serif;
+    font-size: 70px;
+}
+.kombinacijaslika{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.kombinacijaslika img{
+    margin-right: 30px;
+    height: 250px;
+    width: 300px;
+}
+
+.kombinacijaslika p{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.platemesoPorcije{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+.platenaslov h3{
+    font-family: "Poetsen One", sans-serif;
+    font-size: 70px;
+}
+.plate{
+    margin-bottom: 50px;
+}
+
+.platasve{
+    display: flex;
+    align-items: center;
+}
+
+.platasvePorcije{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+.platasve img{
+    margin-right: 40px;
+}
+
+.platasve p{
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 50px;
+}
+
+ /*SALATA STRANICA*/
+
+.salate{
+    margin-top: 20px;
+}
+
+.salatenaslov{
+    margin-top: 150px;
+}
+
+.salatenaslov h3{
+    font-family: "Poetsen One", sans-serif;
+    font-size: 70px;
+}
+
+
+.mlijecni h2{
+    font-family: "Poetsen One", sans-serif;
+    font-size: 70px;
+    margin-top: 50px;
+    margin-bottom: -20px;
+}
+
+.pice{
+    display: flex;
+    justify-content: space-between;
+}
+
+.picenaslov h2{
+
+    font-family: "Poetsen One", sans-serif;
+    font-size: 70px;
+}
+
+.kafanaslov h2{
+    font-family: "Poetsen One", sans-serif;
+    font-size: 70px;
+}
+
+.desert{
+    display: flex;
+    justify-content: space-between;
+}
+
+.desertnaslov h2{
+    font-family: "Poetsen One", sans-serif;
+    font-size: 70px;
+}
+
+/*FORMA*/
+
+#password-strength-container {
+    width: 100%;
+    background: #ddd;
+    height: 5px;
+    margin-top: 20px;
+    display: flex;
+  }
+  
+  #password-strength {
+    height: 5px;
+    background-color: #e1e1e1;
+    width: 100%;
+  }
+  
+  .strength-weak {
+    background-color: red !important;
+    width: 150px;
+  }
+  
+  .strength-medium {
+    background-color: orange !important;
+    width: 200px;
+  }
+  
+  .strength-strong {
+    background-color: green !important;
+    width: 250px;
+  }
+
+  #successMessage {
+    color: green;
+    text-align: center;
+}
+
+#errorMessage{
+    color: red;
+    text-align: center;
+}
+.hidden {
+    display: none;
+}
+
+
+.dugme button{
+    background-color: transparent;
+    border: 2px solid black !important;
+    color: black;
+    padding: 10px 30px 10px 30px;
+    font-weight: bold;
+}
+
+.dugme button:hover{
+    background-color: black;
+    border: 2px solid rgb(255, 255, 255) !important;
+    color: rgb(255, 255, 255);
+    padding: 10px 30px 10px 30px;
+    font-weight: bold;
+}
+
+.sektor6{
+    margin-top: 80px;
+}
+
+.forme{
+    margin-top: 30px;
+}
+
+
+/*INTERACTIVE GALLERY*/
+
+
+
+.jelo img {
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.modal-content, #caption {
+    animation: zoom 0.6s;
+}
+
+@keyframes zoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#caption {
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+}
+
+
+/* content toggle button*/
+
+.dugmehide{
+    background-color: #044f32;
+    color: white;
+    border: 2px solid black;
+    border-radius: 50px;
+    padding: 10px 0px 10px 0px;
+    font-weight: bold;
+}
+
+
+/* Style for the accordion menu */
+.accordion {
+    max-width: 400px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .accordion-item {
+    background-color: #f9f9f9;
+    border-top: 1px solid #ccc;
+  }
+  
+  .accordion-item:last-child {
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .accordion-item-header {
+    background-color: #e9e9e9;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .accordion-item-content {
+    padding: 10px;
+    display: none;
+  }
+  
+  /* Style for the active accordion item */
+  .active {
+    display: block;
+  }
+  
+  .accordion-item-content {
+    display: none;
+}
+
+.accordion-item-content.active {
+    display: block;
+}
+
+.accordion-item-header {
+    cursor: pointer;
+}
+
+
+  
+/*VIEWMORE*/
+
+.viewmore{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.viewmore button{
+    background-color: #044f32;
+    padding: 10px 20px 10px 20px;
+    color: white;
+    font-weight: bold;
+    border: 2px solid white;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+
+
+/*responsive*/
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .logoime1 h1{
+        font-size: 60px;
+    }
+    .cjenovnik h2{
+        font-size: 70px;
+    }
+
+    .stanica1{
+        font-size: 50px;
+
+    }
+    .stanica {
+        font-size: 50px;
+        background-image: url(../slike/titleBG.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 600px; 
+        display: inline-block; 
+        padding: 0px 100px 10px 100px; /* Add padding for better spacing */
+        
+    }
+    .kontakt h2{
+        font-size: 70px;
+    }
+
+    .footerlogo img{
+        height: 70px;
+        width: 220px;    }
+    
+    .footertext1 p{
+        font-size: 20px;
+    }
+    .footermeni ul li a{
+        font-size: 15px;
+    }
+    .footerkontakt p{
+        font-size: 15px;
+    }
+    .jelo{
+        display: flex;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .platasve p{
+        font-weight: bold;
+        font-size: 30px;
+        padding-left: 20px;
+        margin-left: 50px;
+    }
+  
+    
+}
+@media screen and (min-width: 665px) and (max-width: 768px) {
+    .logoime1 h1{
+        font-size: 60px;
+    }
+    .cjenovnik h2{
+        font-size: 70px;
+    }
+
+    .stanica1{
+        font-size: 50px;
+
+    }
+    .stanica {
+        font-size: 50px;
+        background-image: url(../slike/titleBG.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 600px; 
+        display: inline-block; 
+        padding: 0px 100px 10px 100px; /* Add padding for better spacing */
+        
+    }
+    .kontakt h2{
+        font-size: 70px;
+    }
+
+    .footerlogo img{
+        height: 70px;
+        width: 220px;    }
+    
+    .footertext1 p{
+        font-size: 20px;
+    }
+    .footermeni ul li a{
+        font-size: 15px;
+    }
+    .footerkontakt p{
+        font-size: 15px;
+    }
+    .jelo{
+        display: flex;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .platasve p{
+        font-weight: bold;
+        font-size: 20px;
+        margin-left: 50x;
+    }
+    .platasve img{
+        margin-right: 60px;
+        width: 250px;
+    }
+}
+@media screen and (min-width: 426px) and (max-width: 665px) {
+    .logoime1 h1{
+        font-size: 60px;
+    }
+    .cjenovnik h2{
+        font-size: 70px;
+    }
+
+    .stanica1{
+        font-size: 50px;
+
+    }
+    .stanica {
+        font-size: 50px;
+        background-image: url(../slike/titleBG.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 600px; 
+        display: inline-block; 
+        padding: 0px 100px 10px 100px; /* Add padding for better spacing */
+    }
+    .kontakt h2{
+        font-size: 70px;
+    }
+    
+    .footerlogo img{
+        height: 70px;
+        width: 220px;    }
+    
+    .footertext1 p{
+        font-size: 20px;
+    }
+    .footermeni ul li a{
+        font-size: 15px;
+    }
+    .footerkontakt p{
+        font-size: 15px;
+    }
+    .jelo{
+        display: flex;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (min-width: 376px) and (max-width: 425px) {
+    .logoime1 h1{
+        font-size: 60px;
+    }
+    .cjenovnik h2{
+        font-size: 70px;
+    }
+
+    .stanica1{
+        font-size: 50px;
+
+    }
+    .stanica {
+        font-size: 50px;
+        background-image: url(../slike/titleBG.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 400px; 
+        display: inline-block; 
+        padding: 0px 100px 10px 100px; /* Add padding for better spacing */
+    }
+    .kontakt h2{
+        font-size: 70px;
+    }
+    
+    .footerlogo img{
+        height: 70px;
+        width: 220px;    }
+    
+    .footertext1 p{
+        font-size: 20px;
+    }
+    .footermeni ul li a{
+        font-size: 15px;
+    }
+    .footerkontakt p{
+        font-size: 15px;
+    }
+    .porcijenaslov h2{
+        font-family: "Poetsen One", sans-serif;
+        font-size: 90px;
+        display: flex;
+        justify-content: center;
+        padding-top: 150px;
+    }
+    .jelo{
+        display: flex;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (min-width: 0px) and (max-width: 375px) {
+    .logoime1 h1{
+        font-size: 40px;
+    }
+    .cjenovnik h2{
+        font-size: 70px;
+    }
+
+    .stanica1{
+        font-size: 50px;
+
+    }
+    .stanica {
+        font-size: 50px;
+        background-image: url(../slike/titleBG.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 400px; 
+        display: inline-block; 
+        padding: 0px 100px 10px 100px; /* Add padding for better spacing */
+    }
+    .kontakt h2{
+        font-size: 70px;
+    }
+    
+    .footerlogo img{
+        height: 70px;
+        width: 220px;    }
+    
+    .footertext1 p{
+        font-size: 20px;
+    }
+    .footermeni ul li a{
+        font-size: 15px;
+    }
+    .footerkontakt p{
+        font-size: 15px;
+    }
+    .porcijenaslov h2{
+        font-family: "Poetsen One", sans-serif;
+        font-size: 80px;
+        display: flex;
+        justify-content: center;
+        padding-top: 150px;
+    }
+    .jelo{
+        display: flex;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .kombinacijenaslov h3{
+        font-family: "Poetsen One", sans-serif;
+        font-size: 50px;
+    }
+    .kombinacijaslika p{
+        font-weight: bold;
+        font-size: 20px;
+    }
+    
+.platasve p{
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 50px;
+}
+.platasve img{
+    width: 300px;
+
+}
+.mlijecni h2{
+    font-size: 40px;
+}
+.cijene{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 40px;
+}
+
+
+}
+
+
+
+
+.salate .container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.salate .col-md-4, .salate .col-md-8 {
+    padding: 15px;
+}
+
+.thumbnail {
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.close, .prev, .next {
+    position: absolute;
+    top: 50%;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+}
+
+.close {
+    right: 35px;
+    top: 15px;
+    font-size: 60px;
+}
+
+.prev {
+    left: 15px;
+}
+
+.next {
+    right: 15px;
+}
+
+.close:hover, .prev:hover, .next:hover {
+    color: #bbb;
+}
+
+
+
+/* Dark Theme */
+#themeSwitcher{
+    color: white ;
+    background: gray;
+    margin-left: 20px;
+}
+body.dark-theme {
+    background-color: #363535;
+    color: #fff;
+}
+
+.navbar.dark-theme {
+    background-color: #363535;
+    opacity: 0.2s;
+}
+
+.navbar.dark-theme .nav-link {
+    color: #fff;
+}
+
+
+body.dark-theme .lista ul a:hover,
+body.dark-theme .gumbic:hover,
+body.dark-theme .pozadina,
+body.dark-theme .pozadina2,
+body.dark-theme .projects,
+body.dark-theme .clients,
+body.dark-theme .cjenovnik,
+body.dark-theme h2,
+body.dark-theme .kontakt
+{
+    background-color:#363535 ;
+    color: white !important;  
+}
+body.dark-theme .header{
+    background-color: #363535; 
+    color: #ccc;  
+}
+
+body.dark-theme .naslov,
+body.dark-theme .contact,
+body.dark-theme .inputs p {
+    color: #aaa; 
+}
+
+
+/* edit*/
+#edit1{
+    background-color: transparent;
+    border: 2px solid black !important;
+    color: black;
+    padding: 10px 30px 10px 30px;
+    font-weight: bold;
+}
+
+#edit1:hover{
+    background-color: black;
+    border: 2px solid rgb(255, 255, 255) !important;
+    color: rgb(255, 255, 255);
+    padding: 10px 30px 10px 30px;
+    font-weight: bold;
+}
+
+#delete1{
+    background-color: transparent;
+    border: 2px solid black !important;
+    color: black;
+    padding: 10px 30px 10px 30px;
+    font-weight: bold;
+}
+
+#delete1:hover{
+    background-color: black;
+    border: 2px solid rgb(255, 255, 255) !important;
+    color: rgb(255, 255, 255);
+    padding: 10px 30px 10px 30px;
+    font-weight: bold;
+}
+
+/* komentari */
+
+h1 {
+    text-align: center;
+  }
+  
+  .comment {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .comment .username {
+    font-weight: bold;
+  }
+  
+  .comment .date {
+    font-size: 0.8em;
+    color: #666;
+  }
+
+
+  /* DATA DRIVEN CONTENT*/
+
+.platasve{
+    margin-left: 40px;
+}

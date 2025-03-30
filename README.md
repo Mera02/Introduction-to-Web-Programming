@@ -1,2 +1,3 @@
 # Introduction-to-Web-Programming
-'Hello Everyone'
+The database schema is located in:
+frontend/assets/database-schema.jpg

@@ -10,89 +10,916 @@ body{
 
 
 /* navbar */
-
-#logo{
-    height: 70px;
-    width: 200px;
+#logo {
+    height: 60px;
+    width: auto;
 }
 
-.navbar{
-    background: rgba(76, 175, 80, 0.8)
-    
+.navbar {
+    background: rgba(76, 175, 80, 0.8);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    padding: 12px 30px;
+    z-index: 999;
 }
 
 
-.opcija{
-    padding-left:20px;
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
-.opcija a{
-    color: rgb(231, 231, 231);
+.opcija {
+    padding: 0 10px;
+}
+
+.opcija a {
+    color: #ffffff;
     font-weight: bold;
     font-size: 17px;
+    font-family: 'Poetsen One', sans-serif;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    position: relative;
 }
 
-.opcija a:hover{
-    color: rgb(204, 204, 204);
+.opcija a:hover {
+    color: #ffeaa7;
+    transform: scale(1.05);
 }
+
+@media (max-width: 991px) {
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center; /* umjesto flex-start */
+        gap: 15px;
+        padding: 20px 0;
+    }
+
+    .opcija {
+        width: 100%;
+        text-align: center;
+        padding: 5px 0;
+    }
+}
+
+
+
+@media (max-width: 991px) {
+    .navbar-nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+
+
 
 /* pozadina */
 
-.pozadina {
+/* milestone 2 pozadina */
+
+.hero-section {
+    position: relative;
+    background: url("../slike/pozadina.jpg") no-repeat center center/cover;
     height: 100vh;
-    width: 100%;
-    background-image: url(../slike/pozadina.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     display: flex;
-    justify-content: center;
     align-items: center;
-    color: rgb(255, 255, 255);
-}
-
-.stanica {
-    background-image: url(../slike/titleBG.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain; 
-    display: inline-block; 
-    padding: 0px 100px 10px 100px; /* Add padding for better spacing */
-}
-
-.logoime1 {
-    text-align: center;
-    max-width: 80%;
+    justify-content: center;
+  }
+  
+  .hero-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+  }
+  
+  .hero-title {
+    font-size: 4rem;
+    color: #fff;
     font-family: "Poetsen One", sans-serif;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+    animation: fadeInDown 1s ease-out;
+  }
+  
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* SECTION TITLE */
+  .section-title {
+    font-size: 3rem;
+    font-family: "Poetsen One", sans-serif;
+    color: #212529;
+  }
+  
+  /* CJENOVNIK */
+  .food-card {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .food-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .food-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+  }
+  
+  .food-info {
+    padding: 15px;
+  }
+  
+  .food-info h5 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .food-desc {
+    color: #666;
+    font-size: 14px;
+  }
+  
+  .food-price {
+    font-size: 16px;
+    font-weight: 600;
+    color: #198754;
+  }
+  
+  /* KONTAKT SEKCIJA */
+  .kontakt-section p.lead {
+    font-size: 1.2rem;
+    color: #212529;
+    font-family: "Lato", sans-serif;
+  }
+  
+  .kontakt-section .text-muted {
+    font-size: 0.95rem;
+    color: #666;
+  }
+  
+  .collapse {
+    display: none;
+  }
+  
+  .show {
+    display: block;
+    transition: all 0.3s ease;
+  }
+
+
+/*milestone 2 porcije prvi dio*/
+
+.porcije{
+    padding-top: 30px;
 }
 
-.logoime1 h1 {
-    font-size: 100px;
-    line-height: 1.2;
-    margin: 0;
+.porcije .jelo {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
-.pozadina2{
-    background-image: linear-gradient(#166b4a,#28c270,#166b4a);
+
+.porcije .jelo:hover {
+    transform: scale(1.02);
+    background-color: #f0f0f0;
+    cursor: pointer;
 }
-/* CJENOVNIK */
-.cjenovnik{
+
+.porcije .jeloslika img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 25px;
+}
+
+.porcije .cijene h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.porcije .cijene p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #444;
+    white-space: nowrap;
+}
+
+
+.podaci{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+.cijene{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.cijena{
+    font-weight: bold;
+}
+
+
+
+
+/* Responsive: 2 columns on desktop, 1 column on small screens */
+@media (max-width: 768px) {
+    .porcije .col-md-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .porcije .jelo {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .porcije .jeloslika img {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .porcije .cijene p {
+        white-space: normal;
+    }
+}
+
+
+
+/*milestone 2 kombinacije*/
+
+.kombinacija-box {
+    margin-bottom: 30px;
+}
+
+.kombinacija {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.kombinacija:hover {
+    transform: scale(1.02);
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+.kombinacija-slika img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 25px;
+}
+
+.kombinacija-info h4 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #222;
+}
+
+.kombinacija-info .eng {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 8px;
+}
+
+.kombinacija-info .cijena {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #198754;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .kombinacija {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .kombinacija-slika img {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}
+
+
+
+/*milestone 2 plate*/
+
+/* === PLATE STYLING === */
+
+.plate {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.plata-slika img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.plata-stavke {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.plata-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-radius: 12px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.04);
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.plata-item:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.01);
+}
+
+.plata-item span {
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: 500;
+}
+
+.plata-cijena {
+    font-weight: bold;
+    color: #198754;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .plate .row {
+        flex-direction: column;
+    }
+
+    .plata-item span {
+        font-size: 1rem;
+    }
+
+    .plata-stavke {
+        margin-top: 20px;
+    }
+}
+
+
+
+
+
+/*milestone 2 salate*/
+
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+.salata-slika {
+    width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.cjenovnik{
-    font-size: 4em;
+.salata-slika img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.salata-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.salata-stavka {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: 0.2s ease-in-out;
+}
+
+.salata-stavka:hover {
+    transform: translateY(-2px);
+    background-color: #f0f0f0;
+}
+
+.salata-stavka p {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #222;
+}
+
+.salata-stavka .cijena {
+    font-weight: bold;
+    color: #198754;
+}
+
+
+
+/*stari css koji hocu da sredim za salate*/
+
+.salatenaslov{
+    margin-top: 150px;
+}
+
+.salatenaslov h3{
     font-family: "Poetsen One", sans-serif;
-    margin-bottom: 50px;
-    background-color: white;
-}
-.cjenovnik h2{
-    font-size: 2em;
-    color:#212529;
+    font-size: 70px;
 }
 
 
-/* sektor 2 */
+.mlijecni h2{
+    font-family: "Poetsen One", sans-serif;
+    font-size: 70px;
+    margin-top: 50px;
+    margin-bottom: -20px;
+}
+
+.pice{
+    display: flex;
+    justify-content: space-between;
+}
+
+.picenaslov h2{
+    font-family: "Poetsen One", sans-serif;
+    font-size: 70px;
+}
+
+.kafanaslov h2{
+    font-family: "Poetsen One", sans-serif;
+    font-size: 70px;
+}
+
+.desert{
+    display: flex;
+    justify-content: space-between;
+}
+
+.desertnaslov h2{
+    font-family: "Poetsen One", sans-serif;
+    font-size: 70px;
+}
+
+
+
+
+
+/* milestone 2 mlijecna sekcija*/
+
+.mlijecni-jelo {
+    display: flex;
+    background-color: #f9f9f9;
+    border-radius: 20px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+    transition: transform 0.2s ease;
+}
+
+.mlijecni-jelo:hover {
+    transform: scale(1.01);
+    background-color: #f0f0f0;
+}
+
+.mlijecni-jelo .jeloslika {
+    margin-right: 20px;
+}
+
+.mlijecni-jelo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.mlijecni-cijene h3 {
+    font-size: 1.2rem;
+    margin: 0;
+    font-weight: 700;
+}
+
+.mlijecni-cijene p {
+    font-weight: bold;
+    margin: 0;
+    color: #198754;
+}
+
+
+
+
+
+/*milestone 2 pica*/
+
+.pice {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.03);
+    transition: transform 0.2s ease;
+}
+
+.pice:hover {
+    transform: scale(1.01);
+    background-color: #f0f0f0;
+}
+
+.pice p {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #222;
+}
+
+.pice .cijena {
+    font-weight: bold;
+    color: #198754;
+}
+
+
+
+
+/*milestone 2 kafe i cajevi*/
+.kafa-naslov h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.kafa-section {
+    padding-top: 20px;
+}
+
+.kafa-image {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.kafa-image img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.kafa-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.kafa-item {
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+    transition: all 0.2s ease;
+}
+
+.kafa-item:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.01);
+}
+
+.kafa-item p {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #222;
+}
+
+.kafa-price {
+    color: #198754;
+    font-weight: bold;
+}
+
+
+
+
+
+/*milestone 2 dezerti*/
+
+.dezert-wrapper {
+    margin-top: 40px;
+}
+
+.dezert-slika img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+}
+
+.dezert-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.dezert-stavka {
+    background-color: #f9f9f9;
+    padding: 15px 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.04);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.2s ease-in-out;
+}
+
+.dezert-stavka:hover {
+    background-color: #f1f1f1;
+    transform: translateY(-2px);
+}
+
+.dezert-stavka p {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #222;
+}
+
+.dezert-cijena {
+    color: #198754;
+}
+
+
+
+
+/*login i register forme milestone 2*/
+
+#contactForm {
+    margin-top: 60px; /* ili 80px ako ti je potrebno više */
+}
+  
+#registerForm {
+    margin-top: 60px; /* ili 80px ako ti je potrebno više */
+}
+
+
+
+/*milestone 2 zaposli se*/
+
+#jobApplicationForm {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Sekcija za formu zapošljavanja */
+.zaposli-se-section {
+    padding: 120px 20px 80px; /* gornji razmak povećan zbog navbara */
+    background-color: #f9f9f9;
+    min-height: 100vh;
+}
+
+.form-box {
+    max-width: 700px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.form-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #2d2d2d;
+}
+
+.form-subtitle {
+    font-size: 16px;
+    color: #555;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #28a745;
+}
+
+.form-group button {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-group button:hover {
+    background-color: #218838;
+}
+
+
+
+/*milestone 2 galerija*/
+/* Hover efekat na sve slike unutar galerije */
+#gallery-container img,
+.galerija-slider-img {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+/* Hover animacija */
+#gallery-container img:hover,
+.galerija-slider-img:hover {
+    transform: scale(1.03);
+}
+
+/* Galerija grid slike */
+.gallery-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Slajder slike */
+.galerija-slider-img {
+    height: 500px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.galerija-sekcija {
+    padding-top: 100px;
+    padding-bottom: 80px;
+    text-align: center;
+}
+
+/* Naslov "Galerija" */
+.galerija-sekcija h2 {
+    font-family: "Poetsen One", sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    color: #222;
+}
+
+/* Podnaslov */
+.galerija-sekcija p {
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 40px;
+}
+
+/* Carousel slike */
+.galerija-slider-img {
+    max-height: 600px;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+
+
+/*milestone 2 footer sekcija*/
+
+.footer {
+    background-color: #032d1e;
+    color: white;
+    font-family: 'Poetsen One', sans-serif;
+}
+
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #ffd700;
+}
+
+.footer .zmaj-footer-logo {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #27ae60;
+}
+
+.footer hr {
+    opacity: 0.2;
+}
+
+.footer p {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+
+
+
+
+
+/* sekcija 2 */
 
 .sektor2{
     padding-bottom: 50px;
@@ -158,68 +985,8 @@ body{
     justify-content: center;
 }
 
-/*FOOTER*/
-
-.footer {
-    background: #043927; /* Tamnozelena boja */
-    color: white;
-    padding: 40px 0;
-    margin-top: 50px;
-}
-
-.footer .footer-text {
-    margin: 0;
-    font-size: 16px;
-}
 
 
-.footer-logo{
-    max-width: 180px;  
-    height: auto;     
-    display: block;
-    margin: 0 auto;  
-    object-fit: contain;
-}
-
-
-
-.footer-menu {
-    list-style: none;
-    padding: 0;
-    text-align: center;
-}
-
-.footer-menu li {
-    margin-bottom: 8px;
-}
-
-.footer-menu a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-}
-
-.footer-menu a:hover {
-    color: #FFD700; 
-}
-
-
-.footer-contact {
-    font-size: 14px;
-    margin: 5px 0;
-}
-
-
-
-/* NOVA FORMA */
-
-
-
-
-
-
-
-/* strenght password*/
 
 /* PORCIJE NOVI PAGE */
 
@@ -231,15 +998,7 @@ body{
     padding-top: 150px;
 }
 
-.porcije{
-    padding-top: 100px;
-}
 
-
-.jelo{
-    display: flex;
-    margin-bottom: 20px;
-}
 
 .jelo img{
     height: 200px;
@@ -248,14 +1007,11 @@ body{
     border-radius: 100px;
 }
 
-.cijene{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+
 .kombinacijenaslov h3{
     font-family: "Poetsen One", sans-serif;
     font-size: 70px;
+    margin-bottom: 30px;
 }
 .kombinacijaslika{
     margin-top: 30px;
@@ -313,54 +1069,6 @@ body{
     margin-left: 50px;
 }
 
- /*SALATA STRANICA*/
-
-.salate{
-    margin-top: 20px;
-}
-
-.salatenaslov{
-    margin-top: 150px;
-}
-
-.salatenaslov h3{
-    font-family: "Poetsen One", sans-serif;
-    font-size: 70px;
-}
-
-
-.mlijecni h2{
-    font-family: "Poetsen One", sans-serif;
-    font-size: 70px;
-    margin-top: 50px;
-    margin-bottom: -20px;
-}
-
-.pice{
-    display: flex;
-    justify-content: space-between;
-}
-
-.picenaslov h2{
-
-    font-family: "Poetsen One", sans-serif;
-    font-size: 70px;
-}
-
-.kafanaslov h2{
-    font-family: "Poetsen One", sans-serif;
-    font-size: 70px;
-}
-
-.desert{
-    display: flex;
-    justify-content: space-between;
-}
-
-.desertnaslov h2{
-    font-family: "Poetsen One", sans-serif;
-    font-size: 70px;
-}
 
 /*FORMA*/
 

@@ -6,7 +6,7 @@ $(document).ready(function() {
       templateDir: "./pages/",
       pageNotFound: "error_404"
     });
-  
+
     // Ruta za Homepage
     app.route({
         view: 'homepage',
@@ -17,7 +17,7 @@ $(document).ready(function() {
             });
         }
     });
-  
+
     // Ruta za Porcije
     app.route({
       view: 'porcije',
@@ -37,7 +37,7 @@ $(document).ready(function() {
           });
       }
     });
-  
+
     // Ruta za Login (Forma)
     app.route({
         view: 'forma',
@@ -73,15 +73,15 @@ $(document).ready(function() {
                     }, 500);
                 }
             });
-  
+
             // Prebaci na registraciju
             $("#registerLink").on("click", function() {
                 window.location.hash = "#register";
             });
-  
+
         }
     });
-  
+
     // Ruta za Registraciju
     app.route({
         view: 'register',
@@ -115,28 +115,14 @@ $(document).ready(function() {
                     }, 500);
                 }
             });
-  
+
             // Prebaci na login ako ima nalog
             $("#loginLink").on("click", function() {
                 window.location.hash = "#forma";
             });
         }
     });
-  
-    // Ruta za Pitanja (FAQ)
-    app.route({
-        view: 'pitanja',
-        load: '../pages/faq.html',
-        onReady: function() {
-            const accordionItems = document.querySelectorAll('.accordion-item');
-            accordionItems.forEach(item => {
-                item.querySelector('.accordion-item-header').addEventListener('click', function() {
-                    this.nextElementSibling.classList.toggle('active');
-                });
-            });
-        }
-    });
-  
+
     // Ruta za Salate
     app.route({
       view: 'salate',
@@ -145,7 +131,24 @@ $(document).ready(function() {
           console.log("Stranica Salate je učitana!");
       }
     });
-  
+
+    // Ruta za Zaposli Se
+    app.route({
+      view: 'zaposlise',
+      load: '../pages/zaposlise.html',
+      onReady: function() {
+          console.log("Zaposli se forma učitana");
+      }
+    });
+
+    // Ruta za Zaposli Se
+    app.route({
+        view: 'galerija',
+        load: '../pages/galerija.html',
+        onReady: function() {
+            console.log("Galerija je učitana");
+        }
+      });
+
     app.run();
   });
-  

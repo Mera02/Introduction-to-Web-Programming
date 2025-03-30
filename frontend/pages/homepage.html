@@ -1,107 +1,125 @@
-<div class="pozadina">
-    <div class="logoime1">
-        <h1>Cevabdzinica Zmaj Stanica Sarajevo</h1>
-    </div> 
-</div>
-
-<div class="pozadina2">
-    <!--CJENOVNIK-->
-    <div class="cjenovnik" id="novo">
-        <h2>Cjenovnik</h2>
+<section class="hero-section">
+    <div class="hero-overlay">
+      <div class="container text-center">
+        <h1 class="hero-title">
+          Cevabdzinica Zmaj <br /> Stanica Sarajevo
+        </h1>
+        <a href="#porcije" class="btn btn-success btn-lg mt-4">Pogledaj meni</a>
+      </div>
     </div>
-
-    <div class="sektor2">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-5">
-                    <div class="nova1">
-                        <div class="cevapi1">
-                            <img src="/frontend/assets/slike/pileci.jpg" class="thumbnail" data-full="/frontend/assets/slike/pileci-large.jpg" alt="Pileci Sendvic">
-                        </div>
-                        <div class="cevapi">Pileci sendvic</div>
-                        <div class="klikni">
-                            <p>350g (kupus)</p>
-                            <p><b>3.50KM</b></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-2"></div>
-                <div class="col-md-5">
-                    <div class="nova2">
-                        <div class="cevapi2">
-                            <img src="/frontend/assets/slike/pomfrit-min.jpg" class="thumbnail" data-full="/frontend/assets/slike/pomfrit-large.jpg" alt="Pomfrit">
-                        </div>
-                        <div class="cevapi">Pomfrit</div>
-                        <div class="klikni">
-                            <p>200g</p>
-                            <p><b>3.00KM</b></p>
-                        </div>
-                    </div>
-                </div>
+  </section>
+  
+  <section class="cjenovnik-section py-5" id="cjenovnik">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">Cjenovnik</h2>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-5">
+          <div class="food-card">
+            <img src="assets/slike/pileci.jpg" alt="Pileci Sendvic" class="food-img" />
+            <div class="food-info">
+              <h5>Pileći Sendvič</h5>
+              <p class="food-desc">350g (kupus)</p>
+              <p class="food-price">3.50KM</p>
             </div>
-            <div class="viewmore">
-                <button id="viewMoreBtn">POGLEDAJ SVE PONUDE</button>
-            </div>
+          </div>
         </div>
-    </div>
-
-    <!--KONTAKT NASLOV-->
-    <div class="kontakt">
-        <h2>Kontakt</h2>
-    </div>
-
-    <!--KONTAKT SEKCIJA-->
-    <div class="sektor3">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-7">
-                    <div class="kontakt1">
-                        <img src="/frontend/assets/slike/contact-img.png" alt="Kontakt Slika">
-                    </div>
-                </div>
-                <div class="col-md-5">
-                    <div class="citat">
-                        <p>Cevabdzinica <b>"Zmaj"</b> je pravo mjesto za ljubitelje vrhunskog roštilja! Naša jela su pripremljena od najkvalitetnijeg mesa, pažljivo začinjenog i pečenog do savršenstva. Uživajte u sočnim ćevapima, hrskavom somunu i svježim prilozima koji će zadovoljiti i najprobirljivija nepca. Dođite i otkrijte zašto smo najbolji izbor za sve ljubitelje dobrog zalogaja!</p>
-                        <p><b>+387 33 616 969</b></p>
-                        <p>Novo Sarajevo Put zivota, Sarajevo 71000</p>
-                        <button class="dugmehide" id="toggleButton" onclick="toggleContent()">Hide Content</button>
-                    </div>
-                </div>
+        <div class="col-md-5">
+          <div class="food-card">
+            <img src="assets/slike/pomfrit-min.jpg" alt="Pomfrit" class="food-img" />
+            <div class="food-info">
+              <h5>Pomfrit</h5>
+              <p class="food-desc">200g</p>
+              <p class="food-price">3.00KM</p>
             </div>
+          </div>
         </div>
+      </div>
+      <div class="text-center mt-4">
+        <a href="#porcije" class="btn btn-outline-success">Pogledaj sve ponude &rarr;</a>
+      </div>
     </div>
+  </section>
+  
+  <section class="kontakt-section py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">Kontakt</h2>
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-4 mb-md-0">
+          <img src="assets/slike/contact-img.png" alt="Kontakt Slika" class="img-fluid rounded shadow" />
+        </div>
+        <div class="col-md-6">
+          <p class="lead">
+            Ćevabdžinica <strong>"Zmaj"</strong> je pravo mjesto za ljubitelje vrhunskog roštilja! Naša jela su pripremljena od najkvalitetnijeg mesa, pažljivo začinjenog i pečenog do savršenstva.
+          </p>
+          <p class="text-muted">
+            Uživajte u sočnim ćevapima, hrskavom somunu i svježim prilozima koji će zadovoljiti i najprobirljivija nepca.
+          </p>
+          <button class="btn btn-success mt-3" onclick="toggleContactInfo()">Kontaktirajte nas</button>
+          <div id="hiddenContact" class="collapse mt-3">
+            <p class="text-muted"><strong>Telefon:</strong> +387 33 616 969</p>
+            <p class="text-muted"><strong>Adresa:</strong> Novo Sarajevo, Put Života 71000</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!--FOOTER-->
-    <footer class="footer">
-        <div class="container">
+    <footer class="footer mt-5">
+        <div class="container py-5">
             <div class="row text-center text-md-start">
-                <!-- Logo sekcija -->
-                <div class="col-md-3 d-flex justify-content-center justify-content-md-start">
-                    <img src="/frontend/assets/slike/logo.png" alt="Logo" class="footer-logo">
-                </div>
     
-                <!-- Tekst dobrodošlice -->
-                <div class="col-md-3 d-flex align-items-center justify-content-center justify-content-md-start">
-                    <p class="footer-text">Dobrodošli u najbolju ćevabdžinicu u gradu</p>
+                <!-- ZMAJ info -->
+                <div class="col-md-3 mb-4">
+                    <h3 class="zmaj-footer-logo">ZMAJ</h3>
+                    <p class="small">Ukus koji traje – ćevabdžinica sa tradicijom i stilom.</p>
+                    <p class="small">🌶️ Domaća kuhinja, roštilj i najbrža usluga u gradu.</p>
                 </div>
     
                 <!-- Navigacija -->
-                <div class="col-md-3">
-                    <ul class="footer-menu">
-                        <li><a href="#">O NAMA</a></li>
-                        <li><a href="#">GALERIJA</a></li>
-                        <li><a href="#">KONTAKTIRAJTE NAS</a></li>
-                        <li><a href="/frontend/index.html#pitanja">FAQ</a></li>
+                <div class="col-md-2 mb-4">
+                    <h6 class="fw-bold">Navigacija</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#homepage">Početna</a></li>
+                        <li><a href="#porcije">Porcije</a></li>
+                        <li><a href="#salate">Salate</a></li>
+                        <li><a href="#galerija">Galerija</a></li>
+                        <li><a href="#forma">Prijava</a></li>
                     </ul>
                 </div>
     
-                <!-- Kontakt informacije -->
-                <div class="col-md-3 text-center text-md-start">
-                    <p class="footer-contact"><strong>+387 33 616 969</strong></p>
-                    <p class="footer-contact">NOVO SARAJEVO PUT ŽIVOTA, SARAJEVO 71000</p>
-                    <p class="footer-contact">PON – NED: 5:00 – 00:00</p>
+                <!-- Kontakt -->
+                <div class="col-md-3 mb-4">
+                    <h6 class="fw-bold">Kontakt</h6>
+                    <p>📞 <strong>+387 33 616 969</strong></p>
+                    <p>📍 <a href="https://goo.gl/maps/NvH9L7g5zvB2" target="_blank" class="footer-link">Novo Sarajevo, Put Života 71000</a></p>
+                    <p>🕒 Radno vrijeme: <br>PON – NED: 5:00 – 00:00</p>
                 </div>
+    
+                <!-- Društvene mreže -->
+                <div class="col-md-2 mb-4">
+                    <h6 class="fw-bold">Zapratite nas</h6>
+                    <a href="#" class="me-2"><i class="fab fa-facebook fa-lg"></i></a>
+                    <a href="#" class="me-2"><i class="fab fa-instagram fa-lg"></i></a>
+                    <a href="#"><i class="fab fa-tiktok fa-lg"></i></a>
+                </div>
+    
+                <!-- Newsletter / Ponuda -->
+                <div class="col-md-2 mb-4">
+                    <h6 class="fw-bold">Zatraži meni</h6>
+                    <form>
+                        <input type="email" class="form-control mb-2" placeholder="Unesi email">
+                        <button class="btn btn-success btn-sm w-100">Pošalji</button>
+                    </form>
+                </div>
+            </div>
+    
+            <hr class="bg-white opacity-25" />
+    
+            <div class="text-center small">
+                &copy; 2025 Ćevabdžinica Zmaj – Sva prava zadržana. | <a href="#">Pravila privatnosti</a> | <a href="#">Uslovi korištenja</a>
             </div>
         </div>
     </footer>
+    
+    
     

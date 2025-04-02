@@ -109,41 +109,24 @@ document.getElementById("togglePassword").addEventListener("click", function() {
 
 
 
-//Theme switcher
-function switchTheme() {
-  var body = document.body;
-  var navbar = document.querySelector('.navbar');
-  var themeSwitcher = document.getElementById('themeSwitcher');
+/*Prikazi vise sekcija na homepageu*/
 
-  body.classList.toggle('dark-theme');
-  navbar.classList.toggle('dark-theme');
-
-  // Toggle font size if needed
-  body.classList.toggle('large-font');
-
-  // Update button text based on the current theme
-  if (body.classList.contains('dark-theme')) {
-      themeSwitcher.textContent = 'White Mode';
-  } else {
-      themeSwitcher.textContent = 'Dark Mode';
-  }
+function toggleContactInfo() {
+  const content = document.getElementById("hiddenContact");
+  content.classList.toggle("collapse");
+  content.classList.toggle("show");
 }
 
 
 
+/*milestone 2 navbar*/
 
-/*  CONTENT TOGGLE */
-
-function toggleContent() {
-  var content = document.querySelector('.citat p');
-  var button = document.getElementById('toggleButton');
-
-  if (content.style.display === "none") {
-      content.style.display = "block";
-      button.textContent = "Hide Content";
-  } else {
-      content.style.display = "none";
-      button.textContent = "Show Content";
-  }
-}
+document.querySelectorAll('.nav-link').forEach(link => {
+  link.addEventListener('click', () => {
+      const navbarCollapse = document.querySelector('.navbar-collapse');
+      if (navbarCollapse.classList.contains('show')) {
+          new bootstrap.Collapse(navbarCollapse).toggle();
+      }
+  });
+});
 

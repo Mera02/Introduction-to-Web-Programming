@@ -1,49 +1,51 @@
-<div class="sektor6 d-flex align-items-center justify-content-center">
+<!-- zaposlise.html -->
+<div class="zaposli-se-section">
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-6">
-                <form id="contactForm" class="p-4 border rounded shadow bg-white">
-                    <h3 class="text-center mb-4">Prijava</h3>
+        <div class="form-box">
+            <h2 class="form-title">Prijava za posao</h2>
+            <p class="form-subtitle">Popunite formu ukoliko ste zainteresovani za rad u Čevabdžinici Zmaj.</p>
 
-                    <div class="row g-3">
-                        <div class="col-md-6">
-                            <label for="prvoime" class="form-label">Ime</label>
-                            <input type="text" class="form-control" id="prvoime" name="prvoime" placeholder="Unesite ime">
-                            <span class="error text-danger" id="firstnameError"></span>
-                        </div>
-                        <div class="col-md-6">
-                            <label for="lastnejm" class="form-label">Prezime</label>
-                            <input type="text" class="form-control" id="lastnejm" name="lastnejm" placeholder="Unesite prezime">
-                            <span class="error text-danger" id="lastnameError"></span>
-                        </div>
-                    </div>
+            <form id="zaposliForm">
+                <div class="form-group">
+                    <label for="ime">Ime</label>
+                    <input type="text" id="ime" name="ime" required>
+                </div>
 
-                    <div class="mt-3">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="email" name="email" placeholder="Unesite email">
-                        <span class="error text-danger" id="emailError"></span>
-                    </div>
+                <div class="form-group">
+                    <label for="prezime">Prezime</label>
+                    <input type="text" id="prezime" name="prezime" required>
+                </div>
 
-                    <div class="mt-3 position-relative">
-                        <label for="password" class="form-label">Šifra</label>
-                        <div class="input-group">
-                            <input type="password" class="form-control" id="password" name="password" placeholder="Unesite šifru">
-                            <button class="btn btn-outline-secondary" type="button" id="togglePassword">
-                                <i class="fa fa-eye"></i>
-                            </button>
-                        </div>
-                        <span class="error text-danger" id="passwordError"></span>
-                    </div>
+                <div class="form-group">
+                    <label for="email">Email adresa</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
 
-                    <div class="d-grid mt-4">
-                        <button type="submit" class="btn btn-success">PRIJAVI SE</button>
-                    </div>
+                <div class="form-group">
+                    <label for="telefon">Broj telefona</label>
+                    <input type="text" id="telefon" name="telefon" required>
+                </div>
 
-                    <div class="text-center mt-3">
-                        <p>Nemate račun? <a href="#register">Registrujte se</a></p>
-                    </div>
-                </form>
-            </div>
+                <div class="form-group">
+                    <label for="pozicija">Pozicija</label>
+                    <select id="pozicija" name="pozicija" required>
+                        <option value="">-- Odaberi poziciju --</option>
+                        <option value="kuhar">Kuhar</option>
+                        <option value="konobar">Konobar</option>
+                        <option value="dostavljac">Dostavljač</option>
+                        <option value="sanker">Šanker</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="opis">Kratko se predstavite</label>
+                    <textarea id="opis" name="opis" rows="4" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit">Pošalji prijavu</button>
+                </div>
+            </form>
         </div>
     </div>
 </div>

@@ -1,0 +1,104 @@
+openapi: 3.0.0
+info:
+  title: Ćevabdžinica Zmaj API
+  description: REST API dokumentacija za entitet `order_items`
+  version: 1.0.0
+
+servers:
+  - url: http://localhost/FarisMeric/Introduction-to-Web-Programming/backend
+
+paths:
+  /order_items:
+    get:
+      tags:
+        - Order Items
+      summary: Vrati sve stavke narudžbi
+      responses:
+        '200':
+          description: Lista stavki narudžbi
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/OrderItem'
+
+    post:
+      tags:
+        - Order Items
+      summary: Dodaj novu stavku narudžbe
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/OrderItem'
+      responses:
+        '200':
+          description: Stavka uspješno dodana
+
+  /order_items/{id}:
+    get:
+      tags:
+        - Order Items
+      summary: Vrati stavku narudžbe po ID-u
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Detalji stavke narudžbe
+        '404':
+          description: Stavka nije pronađena
+
+    put:
+      tags:
+        - Order Items
+      summary: Ažuriraj stavku narudžbe po ID-u
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/OrderItem'
+      responses:
+        '200':
+          description: Stavka ažurirana
+
+    delete:
+      tags:
+        - Order Items
+      summary: Obriši stavku narudžbe po ID-u
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Stavka obrisana
+
+components:
+  schemas:
+    OrderItem:
+      type: object
+      properties:
+        order_id:
+          type: integer
+        product_id:
+          type: integer
+        quantity:
+          type: integer
+        price:
+          type: number
+          format: float

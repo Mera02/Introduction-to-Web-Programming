@@ -6,22 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zmaj Stanica</title>
 
-    <!-- Glavni stilovi -->
+    <!--stilovi-->
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/spapp.css" />
 
-    <!-- Google Fonts -->
+    <!--fontovi-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poetsen+One&display=swap" rel="stylesheet">
 
-    <!-- Bootstrap 5 CSS -->
+    <!--bootstrap 5-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Toastr (notifikacije) -->
+    <!-- Toastr notifikacije -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
 
-    <!-- FontAwesome (ikonice) -->
+    <!-- ikonice -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
@@ -33,12 +33,12 @@
                 <img src="assets/slike/logo.png" id="logo" alt="Logo">
             </a>
     
-            <!-- Hamburger dugme -->
+            
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#zmajMeni" aria-controls="zmajMeni" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
     
-            <!-- Navigacija koja se sklapa -->
+            
             <div class="collapse navbar-collapse justify-content-center" id="zmajMeni">
                 <ul class="navbar-nav">
                     <li class="nav-item opcija">
@@ -59,6 +59,9 @@
                     <li class="nav-item opcija">
                         <a class="nav-link" href="#galerija">GALERIJA</a>
                     </li>
+                    <li class="nav-item opcija">
+                        <a class="nav-link" href="#cart">KORPA</a>
+                      </li>                      
                 </ul>
             </div>
         </div>
@@ -73,10 +76,11 @@
             <section id="homepage" data-load="pages/homepage.html">Pocetna</section>
             <section id="porcije" data-load="pages/porcije.html">Porcije</section>
             <section id="salate" data-load="pages/salate.html">Salate</section>
-            <section id="forma" data-load="pages/forma.html">Zaposli se</section>
+            <section id="forma" data-load="pages/forma.html">Login</section>
             <section id="register" data-load="pages/register.html">Registracija</section>
             <section id="zaposlise" data-load="pages/zaposlise.html">Zaposli se</section>
             <section id="galerija" data-load="pages/galerija.html">Galerija</section>
+            <section id="cart" data-load="pages/cart.html">Korpa</section>
         </main>
     </section>
 
@@ -96,7 +100,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"></script>
     <script src="assets/js/cevap.js"></script>
-    <script src="assets/js/viewmore.js"></script>
     <script src="assets/js/jquery.spapp.js"></script>
     <script src="assets/js/custom.js"></script>
 </body>

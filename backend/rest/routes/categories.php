@@ -1,14 +1,14 @@
 <?php
-require_once __DIR__ . '/../../dao/CategoryDao.php';
+require_once __DIR__ . '/../../services/CategoryService.php';
 
-$dao = new CategoryDao();
+$service = new CategoryService();
 
-Flight::route('GET /categories', function() use ($dao) {
-    Flight::json($dao->getAll());
+Flight::route('GET /categories', function() use ($service) {
+    Flight::json(['All categories' => $service->getAll()]);
 });
 
-Flight::route('GET /categories/@id', function($id) use ($dao) {
-    $category = $dao->getById($id);
+Flight::route('GET /categories/@id', function($id) use ($service) {
+    $category = $service->getById($id);
     if ($category) {
         Flight::json($category);
     } else {
@@ -16,16 +16,16 @@ Flight::route('GET /categories/@id', function($id) use ($dao) {
     }
 });
 
-Flight::route('POST /categories', function() use ($dao) {
+Flight::route('POST /categories', function() use ($service) {
     $data = Flight::request()->data->getData();
-    Flight::json($dao->insert($data));
+    Flight::json($service->create($data));
 });
 
-Flight::route('PUT /categories/@id', function($id) use ($dao) {
+Flight::route('PUT /categories/@id', function($id) use ($service) {
     $data = Flight::request()->data->getData();
-    Flight::json($dao->update($id, $data));
+    Flight::json($service->update($id, $data));
 });
 
-Flight::route('DELETE /categories/@id', function($id) use ($dao) {
-    Flight::json($dao->delete($id));
+Flight::route('DELETE /categories/@id', function($id) use ($service) {
+    Flight::json($service->delete($id));
 });

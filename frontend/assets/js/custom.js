@@ -141,7 +141,7 @@ $(document).ready(function() {
       }
     });
 
-    // Ruta za Zaposli Se
+    // Ruta za Galeriju
     app.route({
         view: 'galerija',
         load: '../pages/galerija.html',
@@ -149,6 +149,17 @@ $(document).ready(function() {
             console.log("Galerija je učitana");
         }
       });
+
+      // Ruta za Cart
+    app.route({
+        view: 'cart',
+        load: '../pages/cart.html',
+        onReady: function() {
+            console.log("Cart stranica učitana");
+            // Ovdje ćeš kasnije dodati dinamičko prikazivanje stavki iz korpe
+        }
+    });
+
 
     app.run();
   });

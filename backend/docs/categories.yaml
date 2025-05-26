@@ -1,0 +1,97 @@
+openapi: 3.0.0
+info:
+  title: Ćevabdžinica Zmaj API
+  description: REST API dokumentacija za entitet `categories`
+  version: 1.0.0
+
+servers:
+  - url: http://localhost/FarisMeric/Introduction-to-Web-Programming/backend
+
+paths:
+  /categories:
+    get:
+      tags:
+        - Categories
+      summary: Vrati sve kategorije
+      responses:
+        '200':
+          description: Lista kategorija
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Category'
+
+    post:
+      tags:
+        - Categories
+      summary: Dodaj novu kategoriju
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Category'
+      responses:
+        '200':
+          description: Kategorija uspješno dodana
+
+  /categories/{id}:
+    get:
+      tags:
+        - Categories
+      summary: Vrati kategoriju po ID-u
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Detalji kategorije
+        '404':
+          description: Kategorija nije pronađena
+
+    put:
+      tags:
+        - Categories
+      summary: Ažuriraj kategoriju po ID-u
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Category'
+      responses:
+        '200':
+          description: Kategorija ažurirana
+
+    delete:
+      tags:
+        - Categories
+      summary: Obriši kategoriju po ID-u
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Kategorija obrisana
+
+components:
+  schemas:
+    Category:
+      type: object
+      properties:
+        name:
+          type: string

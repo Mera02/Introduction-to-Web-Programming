@@ -31,6 +31,12 @@ class BaseDao {
         return $this->conn->lastInsertId();
     }
 
+    public function add($data) {
+        $id = $this->insert($data);
+        $data['id'] = $id;
+        return $data;
+    }
+
     public function update($id, $data) {
         $updates = "";
         foreach ($data as $key => $value) {

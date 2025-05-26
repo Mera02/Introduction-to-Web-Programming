@@ -1,16 +1,14 @@
 <?php
-require_once __DIR__ . '/../../dao/UserDao.php';
+require_once __DIR__ . '/../../services/UserService.php';
 
-$dao = new UserDao();
+$service = new UserService();
 
-// GET – vrati sve korisnike
-Flight::route('GET /users', function() use ($dao) {
-    Flight::json($dao->getAll());
+Flight::route('GET /users', function() use ($service) {
+    Flight::json($service->getAll());
 });
 
-// GET – vrati korisnika po ID-u
-Flight::route('GET /users/@id', function($id) use ($dao) {
-    $user = $dao->getById($id);
+Flight::route('GET /users/@id', function($id) use ($service) {
+    $user = $service->getById($id);
     if ($user) {
         Flight::json($user);
     } else {
@@ -18,19 +16,36 @@ Flight::route('GET /users/@id', function($id) use ($dao) {
     }
 });
 
-// POST – kreiraj korisnika
-Flight::route('POST /users', function() use ($dao) {
+Flight::route('POST /users', function() use ($service) {
     $data = Flight::request()->data->getData();
-    Flight::json($dao->insert($data));
+    $service->validateUser($data);
+    Flight::json($service->create($data));
 });
 
-// PUT – update korisnika
-Flight::route('PUT /users/@id', function($id) use ($dao) {
+Flight::route('PUT /users/@id', function($id) use ($service) {
     $data = Flight::request()->data->getData();
-    Flight::json($dao->update($id, $data));
+    $service->validateUser($data);
+    Flight::json($service->update($id, $data));
 });
 
-// DELETE – izbriši korisnika
-Flight::route('DELETE /users/@id', function($id) use ($dao) {
-    Flight::json($dao->delete($id));
+Flight::route('DELETE /users/@id', function($id) use ($service) {
+    Flight::json($service->delete($id));
+});
+
+
+
+Flight::route('PUT /users/@id/profile', function($id) use ($service) {
+    $data = Flight::request()->data->getData();
+
+    if (!isset($data['first_name']) || !isset($data['phone'])) {
+        Flight::halt(400, 'First name and phone are required.');
+    }
+
+
+    $service->update($id, [
+        'first_name' => $data['first_name'],
+        'phone' => $data['phone']
+    ]);
+
+    Flight::json(['message' => 'Profile updated']);
 });

@@ -1,0 +1,128 @@
+openapi: 3.0.0
+info:
+  title: Ćevabdžinica Zmaj API
+  description: REST API dokumentacija za entitet `products`
+  version: 1.0.0
+
+servers:
+  - url: http://localhost/FarisMeric/Introduction-to-Web-Programming/backend
+
+paths:
+  /users:
+    get:
+      tags:
+        - Users
+      summary: Vrati sve korisnike
+      responses:
+        '200':
+          description: Lista korisnika
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/User'
+    post:
+      tags:
+        - Users
+      summary: Dodaj novog korisnika
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/User'
+      responses:
+        '200':
+          description: Korisnik uspješno dodan
+
+  /users/{id}:
+    get:
+      tags:
+        - Users
+      summary: Vrati korisnika po ID-u
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Detalji korisnika
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        '404':
+          description: Korisnik nije pronađen
+
+    put:
+      tags:
+        - Users
+      summary: Ažuriraj korisnika po ID-u
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/User'
+      responses:
+        '200':
+          description: Korisnik ažuriran
+
+    delete:
+      tags:
+        - Users
+      summary: Obriši korisnika po ID-u
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Korisnik obrisan
+
+components:
+  schemas:
+    Product:
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+        description:
+          type: string
+        price:
+          type: number
+          format: float
+        category_id:
+          type: integer
+        image_url:
+          type: string
+        created_at:
+          type: string
+          format: date-time
+
+    User:
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+        email:
+          type: string
+        password:
+          type: string
+        role:
+          type: string

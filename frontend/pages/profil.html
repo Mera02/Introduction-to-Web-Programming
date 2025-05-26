@@ -1,0 +1,104 @@
+<div class="profile-section">
+    <div class="container">
+      <div class="profile-card">
+        <h2 class="profile-heading">Dobrodošao nazad, <span id="profile-name">Faris</span>!</h2>
+        <p class="profile-subtext">Ovdje možete pregledati i uređivati svoje informacije.</p>
+  
+        <div class="profile-info">
+          <p><strong>Email:</strong> <span id="profile-email">faris@example.com</span></p>
+          <p><strong>Telefon:</strong> <span id="profile-phone">062772155</span></p>
+          <p><strong>Uloga:</strong> <span id="profile-role">User</span></p>
+        </div>
+  
+        <div class="profile-actions">
+            <button id="editProfileBtn" class="btn-edit">Uredi Profil</button>
+          <button class="btn-logout" onclick="logoutUser()">Odjavi se</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- Modal za uređivanje profila -->
+<div class="modal fade" id="editProfileModal" tabindex="-1" aria-labelledby="editProfileModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="editProfileModalLabel">Uredi Profil</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Zatvori"></button>
+        </div>
+        <div class="modal-body">
+          <form id="editProfileForm">
+            <div class="mb-3">
+              <label for="editFirstName" class="form-label">Ime</label>
+              <input type="text" class="form-control" id="editFirstName">
+            </div>
+            <div class="mb-3">
+              <label for="editPhone" class="form-label">Broj telefona</label>
+              <input type="text" class="form-control" id="editPhone">
+            </div>
+            <button type="submit" class="btn btn-success w-100">Spasi Promjene</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+  <footer class="footer mt-5">
+    <div class="container py-5">
+        <div class="row text-center text-md-start">
+
+            
+            <div class="col-md-3 mb-4">
+                <h3 class="zmaj-footer-logo">ZMAJ</h3>
+                <p class="small">Ukus koji traje – ćevabdžinica sa tradicijom i stilom.</p>
+                <p class="small">🌶️ Domaća kuhinja, roštilj i najbrža usluga u gradu.</p>
+            </div>
+
+            
+            <div class="col-md-2 mb-4">
+                <h6 class="fw-bold">Navigacija</h6>
+                <ul class="list-unstyled">
+                    <li><a href="#homepage">Početna</a></li>
+                    <li><a href="#porcije">Porcije</a></li>
+                    <li><a href="#salate">Salate</a></li>
+                    <li><a href="#galerija">Galerija</a></li>
+                    <li><a href="#forma">Prijava</a></li>
+                </ul>
+            </div>
+
+            
+            <div class="col-md-3 mb-4">
+                <h6 class="fw-bold">Kontakt</h6>
+                <p>📞 <strong>+387 33 616 969</strong></p>
+                <p>📍 <a href="https://goo.gl/maps/NvH9L7g5zvB2" target="_blank" class="footer-link">Novo Sarajevo, Put Života 71000</a></p>
+                <p>🕒 Radno vrijeme: <br>PON – NED: 5:00 – 00:00</p>
+            </div>
+
+            
+            <div class="col-md-2 mb-4">
+                <h6 class="fw-bold">Zapratite nas</h6>
+                <a href="#" class="me-2"><i class="fab fa-facebook fa-lg"></i></a>
+                <a href="#" class="me-2"><i class="fab fa-instagram fa-lg"></i></a>
+                <a href="#"><i class="fab fa-tiktok fa-lg"></i></a>
+            </div>
+
+            
+            <div class="col-md-2 mb-4">
+                <h6 class="fw-bold">Zatraži meni</h6>
+                <form>
+                    <input type="email" class="form-control mb-2" placeholder="Unesi email">
+                    <button class="btn btn-success btn-sm w-100">Pošalji</button>
+                </form>
+            </div>
+        </div>
+
+        <hr class="bg-white opacity-25" />
+
+        <div class="text-center small">
+            &copy; 2025 Ćevabdžinica Zmaj – Sva prava zadržana. | <a href="#">Pravila privatnosti</a> | <a href="#">Uslovi korištenja</a>
+        </div>
+    </div>
+</footer>

@@ -1,0 +1,122 @@
+openapi: 3.0.0
+info:
+  title: Ćevabdžinica Zmaj API
+  description: REST API dokumentacija za entitet `products`
+  version: 1.0.0
+
+servers:
+  - url: http://localhost/FarisMeric/Introduction-to-Web-Programming/backend
+
+paths:
+  /products:
+    get:
+      tags:
+        - Products
+      summary: Vrati sve proizvode
+      responses:
+        '200':
+          description: Lista proizvoda
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Product'
+    post:
+      tags:
+        - Products
+      summary: Dodaj novi proizvod
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Product'
+      responses:
+        '200':
+          description: Proizvod uspješno dodan
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Product'
+
+  /products/{id}:
+    get:
+      tags:
+        - Products
+      summary: Vrati proizvod po ID-u
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Detalji proizvoda
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Product'
+        '404':
+          description: Proizvod nije pronađen
+
+    put:
+      tags:
+        - Products
+      summary: Ažuriraj proizvod po ID-u
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Product'
+      responses:
+        '200':
+          description: Proizvod ažuriran
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Product'
+
+    delete:
+      tags:
+        - Products
+      summary: Obriši proizvod po ID-u
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Proizvod obrisan
+
+components:
+  schemas:
+    Product:
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+        description:
+          type: string
+        price:
+          type: number
+          format: float
+        category_id:
+          type: integer
+        image_url:
+          type: string
+        created_at:
+          type: string
+          format: date-time

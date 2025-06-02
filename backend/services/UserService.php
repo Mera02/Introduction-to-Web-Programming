@@ -25,7 +25,6 @@ class UserService extends BaseService {
             throw new Exception("Valid email is required.");
         }
 
-        
         $existingUser = $this->dao->getByEmail($user['email']);
         if ($existingUser) {
             throw new Exception("Email already exists.");
@@ -38,21 +37,15 @@ class UserService extends BaseService {
         if (!isset($user['phone']) || !preg_match('/^\d{8,}$/', $user['phone'])) {
             throw new Exception("Phone number must have at least 8 digits.");
         }
-
-        
     }
 
     public function register($user) {
-        
         $user['role'] = isset($user['role']) && $user['role'] === 'admin' ? 'admin' : 'user';
 
-        
         $this->validateUser($user);
 
-        
         $user['password'] = password_hash($user['password'], PASSWORD_DEFAULT);
 
-       
         return $this->dao->add($user);
     }
 }

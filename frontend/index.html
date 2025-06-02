@@ -25,20 +25,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
-
 <body>
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container d-flex justify-content-between align-items-center">
             <a class="navbar-brand" href="#homepage">
                 <img src="assets/slike/logo.png" id="logo" alt="Logo">
             </a>
-    
-            
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#zmajMeni" aria-controls="zmajMeni" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-    
-            
+
             <div class="collapse navbar-collapse justify-content-center" id="zmajMeni">
                 <ul class="navbar-nav">
                     <li class="nav-item opcija">
@@ -74,7 +71,6 @@
                         <a class="nav-link" href="#admin">ADMIN PANEL</a>
                     </li>
 
-
                     <li class="nav-item opcija" id="nav-logout-li" style="display: none;">
                         <a href="#" id="nav-logout" class="nav-link" onclick="logoutUser()">LOGOUT</a>
                     </li>                      
@@ -82,10 +78,6 @@
             </div>
         </div>
     </nav>
-    
-    
-    
-    
 
     <section id="pageContent">
         <main id="spapp" role="main">
@@ -102,14 +94,8 @@
             <section id="orders" data-load="pages/orders.html">Narudžbe</section>
             <section id="admin-products" data-load="pages/admin-products.html">Admin Proizvodi</section>
             <section id="admin-users" data-load="pages/admin-users.html">Admin Users</section>
-
         </main>
     </section>
-
-
-    
-    
-
 
     <script src="assets/js/config.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>

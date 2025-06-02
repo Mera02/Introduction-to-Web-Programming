@@ -2,13 +2,11 @@
 require_once __DIR__ . '/../../services/OrderService.php';
 require_once __DIR__ . '/../../middleware/AuthMiddleware.php';
 
-
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 $service = new OrderService();
-
 
 Flight::route('GET /orders', function() use ($service) {
     try {
@@ -21,7 +19,6 @@ Flight::route('GET /orders', function() use ($service) {
         Flight::json(['error' => $e->getMessage()], 500);
     }
 });
-
 
 Flight::route('GET /orders/@id', function($id) use ($service) {
     try {
@@ -36,7 +33,6 @@ Flight::route('GET /orders/@id', function($id) use ($service) {
         Flight::json(['error' => $e->getMessage()], 500);
     }
 });
-
 
 Flight::route('POST /orders', function() use ($service) {
     try {
@@ -53,7 +49,6 @@ Flight::route('POST /orders', function() use ($service) {
     }
 });
 
-
 Flight::route('PUT /orders/@id', function($id) use ($service) {
     try {
         AuthMiddleware::check();
@@ -65,7 +60,6 @@ Flight::route('PUT /orders/@id', function($id) use ($service) {
         Flight::json(['error' => $e->getMessage()], 500);
     }
 });
-
 
 Flight::route('DELETE /orders/@id', function($id) use ($service) {
     try {

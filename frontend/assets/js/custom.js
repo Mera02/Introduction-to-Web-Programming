@@ -357,7 +357,7 @@ app.route({
       }
     });
 
-    
+// Ruta za Galeriju
     app.route({
         view: 'galerija',
         load: '../pages/galerija.html',
@@ -365,9 +365,7 @@ app.route({
             console.log("Galerija je učitana");
         }
       });
-
     
-   
     app.route({
         view: 'cart',
         load: '../pages/cart.html',
@@ -646,6 +644,15 @@ app.route({
     });
 
 
+      // Ruta za Cart
+    app.route({
+        view: 'cart',
+        load: '../pages/cart.html',
+        onReady: function() {
+            console.log("Cart stranica učitana");
+            
+        }
+    });
 
     app.run();
   });

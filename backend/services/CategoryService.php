@@ -25,9 +25,7 @@ class CategoryService extends BaseService {
         return parent::update($id, $category);
     }
 
-    
     public function getByName($name) {
-    return $this->dao->getByName($name);
-}
-
+        return $this->dao->getByName($name);
+    }
 }

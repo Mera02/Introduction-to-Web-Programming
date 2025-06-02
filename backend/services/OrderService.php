@@ -16,13 +16,11 @@ class OrderService extends BaseService {
         $items = $data['items'];
         $user_id = $data['user_id'];
 
-       
         $total = 0;
         foreach ($items as $item) {
             $total += $item['price'] * $item['quantity'];
         }
 
-        
         $order_id = $this->dao->insert([
             'user_id' => $user_id,
             'total_price' => $total,
@@ -30,7 +28,6 @@ class OrderService extends BaseService {
             'created_at' => date('Y-m-d H:i:s')
         ]);
 
-        
         foreach ($items as $item) {
             $this->orderItemService->create([
                 'order_id' => $order_id,
@@ -71,7 +68,4 @@ class OrderService extends BaseService {
 
         return array_values($grouped);
     }
-
-
-
 }

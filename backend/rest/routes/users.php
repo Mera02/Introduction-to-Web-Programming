@@ -32,15 +32,12 @@ Flight::route('DELETE /users/@id', function($id) use ($service) {
     Flight::json($service->delete($id));
 });
 
-
-
 Flight::route('PUT /users/@id/profile', function($id) use ($service) {
     $data = Flight::request()->data->getData();
 
     if (!isset($data['first_name']) || !isset($data['phone'])) {
         Flight::halt(400, 'First name and phone are required.');
     }
-
 
     $service->update($id, [
         'first_name' => $data['first_name'],

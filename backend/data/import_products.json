@@ -1,0 +1,464 @@
+[
+    {
+      "name": "Ćevapi",
+      "description": "140g (luk)",
+      "price": 5.0,
+      "image_url": "assets/slike/cevapi-min.png",
+      "category": "porcije"
+    },
+    {
+      "name": "Pljeskavice",
+      "description": "135g (luk)",
+      "price": 5.0,
+      "image_url": "assets/slike/pljeskavice-min.png",
+      "category": "porcije"
+    },
+    {
+      "name": "Sudžukice",
+      "description": "135g (luk, senf)",
+      "price": 6.0,
+      "image_url": "assets/slike/sudzukice-min.png",
+      "category": "porcije"
+    },
+    {
+      "name": "Pileća Šnicla",
+      "description": "200g (luk)",
+      "price": 5.5,
+      "image_url": "assets/slike/pilecaSnicla-min.png",
+      "category": "porcije"
+    },
+    {
+      "name": "Pileći Fileti",
+      "description": "200g (luk)",
+      "price": 5.5,
+      "image_url": "assets/slike/pileciFileti-min.png",
+      "category": "porcije"
+    },
+    {
+      "name": "Ramstek",
+      "description": "230g (luk)",
+      "price": 6.0,
+      "image_url": "assets/slike/ramstek-min.png",
+      "category": "porcije"
+    },
+    {
+      "name": "Teleća Jetra",
+      "description": "250g (luk)",
+      "price": 8.0,
+      "image_url": "assets/slike/telecaJetra-min.png",
+      "category": "porcije"
+    },
+    {
+      "name": "Pileći Steak",
+      "description": "230g (luk)",
+      "price": 6.0,
+      "image_url": "assets/slike/pileciSteak-min.png",
+      "category": "porcije"
+    },
+    {
+      "name": "Pileći Ražnjići",
+      "description": "135g (luk)",
+      "price": 5.0,
+      "image_url": "assets/slike/pileciRaznjici-min.png",
+      "category": "porcije"
+    },
+    {
+      "name": "Teleća Šnicla",
+      "description": "135g (luk)",
+      "price": 5.0,
+      "image_url": "assets/slike/telecaSnicla-min.png",
+      "category": "porcije"
+    },
+    {
+      "name": "Teleća Kremenadla",
+      "description": "135g (luk)",
+      "price": 5.0,
+      "image_url": "assets/slike/telecaKremelada-min.png",
+      "category": "porcije"
+    },
+    {
+      "name": "Teleći Ražnjići",
+      "description": "135g (luk)",
+      "price": 5.0,
+      "image_url": "assets/slike/teleciRaznjici-min.png",
+      "category": "porcije"
+    },
+    {
+      "name": "Suđukice, Ćevapi",
+      "description": "Sausages, Ćevapi",
+      "price": 10.5,
+      "image_url": "assets/slike/teleciBubrezi-min.png",
+      "category": "kombinacije"
+    },
+    {
+      "name": "Piletina, Ćevapi",
+      "description": "Chicken, Ćevapi",
+      "price": 10.5,
+      "image_url": "assets/slike/teleciRaznjici-min.png",
+      "category": "kombinacije"
+    },
+    {
+      "name": "Miješano meso deluxe",
+      "description": "",
+      "price": 15.0,
+      "image_url": "assets/slike/plate-min.jpg",
+      "category": "plate"
+    },
+    {
+      "name": "Miješano meso XL",
+      "description": "",
+      "price": 25.0,
+      "image_url": "assets/slike/plate-min.jpg",
+      "category": "plate"
+    },
+    {
+      "name": "Grill mix sa povrćem",
+      "description": "",
+      "price": 18.0,
+      "image_url": "assets/slike/plate-min.jpg",
+      "category": "plate"
+    },
+    {
+      "name": "Miješano meso pikant",
+      "description": "",
+      "price": 17.0,
+      "image_url": "assets/slike/plate-min.jpg",
+      "category": "plate"
+    },
+    {
+      "name": "Specijalna gurmanska plata",
+      "description": "",
+      "price": 23.0,
+      "image_url": "assets/slike/plate-min.jpg",
+      "category": "plate"
+    },
+    {
+      "name": "Pileće miješano meso",
+      "description": "",
+      "price": 12.0,
+      "image_url": "assets/slike/plate-min.jpg",
+      "category": "plate"
+    },
+    {
+      "name": "Balkanska plata",
+      "description": "",
+      "price": 19.0,
+      "image_url": "assets/slike/plate-min.jpg",
+      "category": "plate"
+    },
+    {
+      "name": "Zmaj specijal mix",
+      "description": "",
+      "price": 20.0,
+      "image_url": "assets/slike/plate-min.jpg",
+      "category": "plate"
+    },
+    {
+      "name": "Zmaj Salata",
+      "description": "",
+      "price": 5.0,
+      "image_url": "assets/slike/SALATE-min.jpg",
+      "category": "salate"
+    },
+    {
+      "name": "Kupus Salata",
+      "description": "",
+      "price": 3.0,
+      "image_url": "assets/slike/SALATE-min.jpg",
+      "category": "salate"
+    },
+    {
+      "name": "Paradajz Salata",
+      "description": "",
+      "price": 3.5,
+      "image_url": "assets/slike/SALATE-min.jpg",
+      "category": "salate"
+    },
+    {
+      "name": "Mijesana Salata",
+      "description": "",
+      "price": 4.0,
+      "image_url": "assets/slike/SALATE-min.jpg",
+      "category": "salate"
+    },
+    {
+      "name": "Zmaj Pileca Salata",
+      "description": "",
+      "price": 5.5,
+      "image_url": "assets/slike/SALATE-min.jpg",
+      "category": "salate"
+    },
+    {
+      "name": "Zmaj Ramstek Salata",
+      "description": "",
+      "price": 6.0,
+      "image_url": "assets/slike/SALATE-min.jpg",
+      "category": "salate"
+    },
+    {
+      "name": "Sopska Salata",
+      "description": "",
+      "price": 4.0,
+      "image_url": "assets/slike/SALATE-min.jpg",
+      "category": "salate"
+    },
+    {
+      "name": "Somun Cijeli",
+      "description": "",
+      "price": 1.0,
+      "image_url": "assets/slike/somun-min.png",
+      "category": "Pecivo i mlijecni proizvodi"
+    },
+    {
+      "name": "Pola Somuna",
+      "description": "",
+      "price": 0.5,
+      "image_url": "assets/slike/polaSomuna-min.png",
+      "category": "Pecivo i mlijecni proizvodi"
+    },
+    {
+      "name": "Labla",
+      "description": "",
+      "price": 1.0,
+      "image_url": "assets/slike/labla-min.png",
+      "category": "Pecivo i mlijecni proizvodi"
+    },
+    {
+      "name": "Kajmak",
+      "description": "",
+      "price": 2.0,
+      "image_url": "assets/slike/kajmak-min.png",
+      "category": "Pecivo i mlijecni proizvodi"
+    },
+    {
+      "name": "Jogurt",
+      "description": "",
+      "price": 1.5,
+      "image_url": "assets/slike/jogurt-min.png",
+      "category": "Pecivo i mlijecni proizvodi"
+    },
+    {
+      "name": "Ajran",
+      "description": "",
+      "price": 1.5,
+      "image_url": "assets/slike/ajran-min.png",
+      "category": "Pecivo i mlijecni proizvodi"
+    },
+    {
+      "name": "Coca Cola",
+      "description": "",
+      "price": 3.0,
+      "image_url": "assets/slike/cola-min.png",
+      "category": "Pića"
+    },
+    {
+      "name": "Coca Cola Zero",
+      "description": "",
+      "price": 3.0,
+      "image_url": "assets/slike/cola-zero-min.png",
+      "category": "Pića"
+    },
+    {
+      "name": "Fanta",
+      "description": "",
+      "price": 3.0,
+      "image_url": "assets/slike/fanta-min.png",
+      "category": "Pića"
+    },
+    {
+      "name": "Sprite",
+      "description": "",
+      "price": 3.0,
+      "image_url": "assets/slike/sprite-min.png",
+      "category": "Pića"
+    },
+    {
+      "name": "Orangina",
+      "description": "",
+      "price": 3.0,
+      "image_url": "assets/slike/orangina-min.png",
+      "category": "Pića"
+    },
+    {
+      "name": "Cockta",
+      "description": "",
+      "price": 3.0,
+      "image_url": "assets/slike/cockta-min.png",
+      "category": "Pića"
+    },
+    {
+      "name": "Negazirana Voda",
+      "description": "",
+      "price": 2.0,
+      "image_url": "assets/slike/voda-min.png",
+      "category": "Pića"
+    },
+    {
+      "name": "Mineralna Voda",
+      "description": "",
+      "price": 2.5,
+      "image_url": "assets/slike/mineralna-min.png",
+      "category": "Pića"
+    },
+    {
+      "name": "Kiseljak Sensation",
+      "description": "",
+      "price": 3.0,
+      "image_url": "assets/slike/kiseljak-min.png",
+      "category": "Pića"
+    },
+    {
+      "name": "Sok od Jabuke",
+      "description": "",
+      "price": 3.0,
+      "image_url": "assets/slike/jabuka-min.png",
+      "category": "Pića"
+    },
+    {
+      "name": "Sok od Jagode",
+      "description": "",
+      "price": 3.0,
+      "image_url": "assets/slike/jagoda-min.png",
+      "category": "Pića"
+    },
+    {
+      "name": "Sok od Ribizle",
+      "description": "",
+      "price": 3.0,
+      "image_url": "assets/slike/ribizla-min.png",
+      "category": "Pića"
+    },
+    {
+      "name": "Sok od Narandže",
+      "description": "",
+      "price": 3.0,
+      "image_url": "assets/slike/narandza-min.png",
+      "category": "Pića"
+    },
+    {
+      "name": "Schweppes Bitter Lemon",
+      "description": "",
+      "price": 3.0,
+      "image_url": "assets/slike/bitter-lemon-min.png",
+      "category": "Pića"
+    },
+    {
+      "name": "Schweppes Tonic",
+      "description": "",
+      "price": 3.0,
+      "image_url": "assets/slike/tonic-min.png",
+      "category": "Pića"
+    },
+    {
+      "name": "Schweppes Tangarina",
+      "description": "",
+      "price": 3.0,
+      "image_url": "assets/slike/tangarina-min.png",
+      "category": "Pića"
+    },
+    {
+      "name": "Schweppes Pomegranate",
+      "description": "",
+      "price": 3.0,
+      "image_url": "assets/slike/pomegranate-min.png",
+      "category": "Pića"
+    },
+    {
+      "name": "Bezalkoholno Pivo",
+      "description": "",
+      "price": 3.0,
+      "image_url": "assets/slike/pivo-min.png",
+      "category": "Pića"
+    },
+    {
+      "name": "Zeleni Čaj",
+      "description": "",
+      "price": 3.0,
+      "image_url": "assets/slike/kafaCaj-min.png",
+      "category": "Kafa i čaj"
+    },
+    {
+      "name": "Crni Čaj",
+      "description": "",
+      "price": 3.0,
+      "image_url": "assets/slike/kafaCaj-min.png",
+      "category": "Kafa i čaj"
+    },
+    {
+      "name": "Šumsko Voće",
+      "description": "",
+      "price": 3.0,
+      "image_url": "assets/slike/kafaCaj-min.png",
+      "category": "Kafa i čaj"
+    },
+    {
+      "name": "Menta",
+      "description": "",
+      "price": 3.0,
+      "image_url": "assets/slike/kafaCaj-min.png",
+      "category": "Kafa i čaj"
+    },
+    {
+      "name": "Kamilica",
+      "description": "",
+      "price": 3.0,
+      "image_url": "assets/slike/kafaCaj-min.png",
+      "category": "Kafa i čaj"
+    },
+    {
+      "name": "Kafa",
+      "description": "",
+      "price": 3.0,
+      "image_url": "assets/slike/kafaCaj-min.png",
+      "category": "Kafa i čaj"
+    },
+    {
+      "name": "Kafa sa Mlijekom",
+      "description": "",
+      "price": 3.0,
+      "image_url": "assets/slike/kafaCaj-min.png",
+      "category": "Kafa i čaj"
+    },
+    {
+      "name": "Tufahija",
+      "description": "",
+      "price": 3.0,
+      "image_url": "assets/slike/kafaCaj-min.png",
+      "category": "Dezerti"
+    },
+    {
+      "name": "Hurmašica",
+      "description": "",
+      "price": 3.0,
+      "image_url": "assets/slike/kafaCaj-min.png",
+      "category": "Dezerti"
+    },
+    {
+      "name": "Tulumba",
+      "description": "",
+      "price": 3.0,
+      "image_url": "assets/slike/kafaCaj-min.png",
+      "category": "Dezerti"
+    },
+    {
+      "name": "Baklava",
+      "description": "",
+      "price": 3.0,
+      "image_url": "assets/slike/kafaCaj-min.png",
+      "category": "Dezerti"
+    },
+    {
+      "name": "Ružica",
+      "description": "",
+      "price": 3.0,
+      "image_url": "assets/slike/kafaCaj-min.png",
+      "category": "Dezerti"
+    },
+    {
+      "name": "Sladoled Kugla",
+      "description": "",
+      "price": 3.0,
+      "image_url": "assets/slike/kafaCaj-min.png",
+      "category": "Dezerti"
+    }
+  ]

@@ -1,38 +1,63 @@
-<div class="porcijenaslov">
-    <h2>PORCIJE</h2>
-</div>
-
-<div class="porcije">
+<div class="profile-section">
     <div class="container">
-        <div class="row" id="productList"></div>
+      <div class="profile-card">
+        <h2 class="profile-heading">Dobrodošao nazad, <span id="profile-name">Faris</span>!</h2>
+        <p class="profile-subtext">Ovdje možete pregledati i uređivati svoje informacije.</p>
+  
+        <div class="profile-info">
+          <p><strong>Email:</strong> <span id="profile-email">faris@example.com</span></p>
+          <p><strong>Telefon:</strong> <span id="profile-phone">062772155</span></p>
+          <p><strong>Uloga:</strong> <span id="profile-role">User</span></p>
+        </div>
+  
+        <div class="profile-actions">
+            <button id="editProfileBtn" class="btn-edit">Uredi Profil</button>
+          <button class="btn-logout" onclick="logoutUser()">Odjavi se</button>
+        </div>
+      </div>
     </div>
-</div>
+  </div>
+  
 
-<!-- KOMBINACIJE -->
-<div class="container">
-    <div class="kombinacijenaslov">
-      <h3>KOMBINACIJE</h3>
+  <!-- Modal za uređivanje profila -->
+<div class="modal fade" id="editProfileModal" tabindex="-1" aria-labelledby="editProfileModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="editProfileModalLabel">Uredi Profil</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Zatvori"></button>
+        </div>
+        <div class="modal-body">
+          <form id="editProfileForm">
+            <div class="mb-3">
+              <label for="editFirstName" class="form-label">Ime</label>
+              <input type="text" class="form-control" id="editFirstName">
+            </div>
+            <div class="mb-3">
+              <label for="editPhone" class="form-label">Broj telefona</label>
+              <input type="text" class="form-control" id="editPhone">
+            </div>
+            <button type="submit" class="btn btn-success w-100">Spasi Promjene</button>
+          </form>
+        </div>
+      </div>
     </div>
-    <div class="row" id="comboList"></div>
-</div>
+  </div>
+  
 
-<!-- PLATE -->
-<div class="container">
-    <div class="platenaslov">
-      <h3>PLATE</h3>
-    </div>
-    <div class="plata-stavke" id="plateList"></div>
-</div>
 
-<footer class="footer mt-5">
+  <footer class="footer mt-5">
     <div class="container py-5">
         <div class="row text-center text-md-start">
+
+            
             <div class="col-md-3 mb-4">
                 <h3 class="zmaj-footer-logo">ZMAJ</h3>
                 <p class="small">Ukus koji traje – ćevabdžinica sa tradicijom i stilom.</p>
                 <p class="small">🌶️ Domaća kuhinja, roštilj i najbrža usluga u gradu.</p>
             </div>
 
+            
             <div class="col-md-2 mb-4">
                 <h6 class="fw-bold">Navigacija</h6>
                 <ul class="list-unstyled">
@@ -44,6 +69,7 @@
                 </ul>
             </div>
 
+            
             <div class="col-md-3 mb-4">
                 <h6 class="fw-bold">Kontakt</h6>
                 <p>📞 <strong>+387 33 616 969</strong></p>
@@ -51,6 +77,7 @@
                 <p>🕒 Radno vrijeme: <br>PON – NED: 5:00 – 00:00</p>
             </div>
 
+            
             <div class="col-md-2 mb-4">
                 <h6 class="fw-bold">Zapratite nas</h6>
                 <a href="#" class="me-2"><i class="fab fa-facebook fa-lg"></i></a>
@@ -58,6 +85,7 @@
                 <a href="#"><i class="fab fa-tiktok fa-lg"></i></a>
             </div>
 
+            
             <div class="col-md-2 mb-4">
                 <h6 class="fw-bold">Zatraži meni</h6>
                 <form>

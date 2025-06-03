@@ -1,108 +1,85 @@
-<div class="sektor6 d-flex align-items-center justify-content-center">
+<div class="login-section d-flex align-items-center justify-content-center">
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-6">
-                <form id="contactForm" class="p-4 border rounded shadow bg-white">
-                    <h3 class="text-center mb-4">Prijava</h3>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form id="loginForm" class="p-4 border rounded shadow bg-white">
+            <h3 class="text-center mb-4">Prijava</h3>
 
-                    <div class="row g-3">
-                        <div class="col-md-6">
-                            <label for="prvoime" class="form-label">Ime</label>
-                            <input type="text" class="form-control" id="prvoime" name="prvoime" placeholder="Unesite ime">
-                            <span class="error text-danger" id="firstnameError"></span>
-                        </div>
-                        <div class="col-md-6">
-                            <label for="lastnejm" class="form-label">Prezime</label>
-                            <input type="text" class="form-control" id="lastnejm" name="lastnejm" placeholder="Unesite prezime">
-                            <span class="error text-danger" id="lastnameError"></span>
-                        </div>
-                    </div>
-
-                    <div class="mt-3">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="email" name="email" placeholder="Unesite email">
-                        <span class="error text-danger" id="emailError"></span>
-                    </div>
-
-                    <div class="mt-3 position-relative">
-                        <label for="password" class="form-label">Šifra</label>
-                        <div class="input-group">
-                            <input type="password" class="form-control" id="password" name="password" placeholder="Unesite šifru">
-                            <button class="btn btn-outline-secondary" type="button" id="togglePassword">
-                                <i class="fa fa-eye"></i>
-                            </button>
-                        </div>
-                        <span class="error text-danger" id="passwordError"></span>
-                    </div>
-
-                    <div class="d-grid mt-4">
-                        <button type="submit" class="btn btn-success">PRIJAVI SE</button>
-                    </div>
-
-                    <div class="text-center mt-3">
-                        <p>Nemate račun? <a href="#register">Registrujte se</a></p>
-                    </div>
-                </form>
+            <div class="mt-3">
+              <label for="loginEmail" class="form-label">Email</label>
+              <input type="email" class="form-control" id="loginEmail" placeholder="Unesite email" required>
             </div>
+
+            <div class="mt-3 position-relative">
+              <label for="loginPassword" class="form-label">Šifra</label>
+              <div class="input-group">
+                <input type="password" class="form-control" id="loginPassword" placeholder="Unesite šifru" required>
+                <button class="btn btn-outline-secondary" type="button" id="toggleLoginPassword">
+                  <i class="fa fa-eye"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="d-grid mt-4">
+              <button type="button" class="btn btn-success w-100" onclick="submitLogin()">PRIJAVI SE</button>
+            </div>
+
+            <div class="text-center mt-3">
+              <p>Nemate račun? <a href="#register">Registrujte se</a></p>
+            </div>
+          </form>
         </div>
+      </div>
     </div>
 </div>
 
-
-
 <footer class="footer mt-5">
     <div class="container py-5">
-        <div class="row text-center text-md-start">
-
-            
-            <div class="col-md-3 mb-4">
-                <h3 class="zmaj-footer-logo">ZMAJ</h3>
-                <p class="small">Ukus koji traje – ćevabdžinica sa tradicijom i stilom.</p>
-                <p class="small">🌶️ Domaća kuhinja, roštilj i najbrža usluga u gradu.</p>
-            </div>
-
-            
-            <div class="col-md-2 mb-4">
-                <h6 class="fw-bold">Navigacija</h6>
-                <ul class="list-unstyled">
-                    <li><a href="#homepage">Početna</a></li>
-                    <li><a href="#porcije">Porcije</a></li>
-                    <li><a href="#salate">Salate</a></li>
-                    <li><a href="#galerija">Galerija</a></li>
-                    <li><a href="#forma">Prijava</a></li>
-                </ul>
-            </div>
-
-            
-            <div class="col-md-3 mb-4">
-                <h6 class="fw-bold">Kontakt</h6>
-                <p>📞 <strong>+387 33 616 969</strong></p>
-                <p>📍 <a href="https://goo.gl/maps/NvH9L7g5zvB2" target="_blank" class="footer-link">Novo Sarajevo, Put Života 71000</a></p>
-                <p>🕒 Radno vrijeme: <br>PON – NED: 5:00 – 00:00</p>
-            </div>
-
-            
-            <div class="col-md-2 mb-4">
-                <h6 class="fw-bold">Zapratite nas</h6>
-                <a href="#" class="me-2"><i class="fab fa-facebook fa-lg"></i></a>
-                <a href="#" class="me-2"><i class="fab fa-instagram fa-lg"></i></a>
-                <a href="#"><i class="fab fa-tiktok fa-lg"></i></a>
-            </div>
-
-            
-            <div class="col-md-2 mb-4">
-                <h6 class="fw-bold">Zatraži meni</h6>
-                <form>
-                    <input type="email" class="form-control mb-2" placeholder="Unesi email">
-                    <button class="btn btn-success btn-sm w-100">Pošalji</button>
-                </form>
-            </div>
+      <div class="row text-center text-md-start">
+        <div class="col-md-3 mb-4">
+          <h3 class="zmaj-footer-logo">ZMAJ</h3>
+          <p class="small">Ukus koji traje – ćevabdžinica sa tradicijom i stilom.</p>
+          <p class="small">🌶️ Domaća kuhinja, roštilj i najbrža usluga u gradu.</p>
         </div>
 
-        <hr class="bg-white opacity-25" />
-
-        <div class="text-center small">
-            &copy; 2025 Ćevabdžinica Zmaj – Sva prava zadržana. | <a href="#">Pravila privatnosti</a> | <a href="#">Uslovi korištenja</a>
+        <div class="col-md-2 mb-4">
+          <h6 class="fw-bold">Navigacija</h6>
+          <ul class="list-unstyled">
+            <li><a href="#homepage">Početna</a></li>
+            <li><a href="#porcije">Porcije</a></li>
+            <li><a href="#salate">Salate</a></li>
+            <li><a href="#galerija">Galerija</a></li>
+            <li><a href="#forma">Prijava</a></li>
+          </ul>
         </div>
+
+        <div class="col-md-3 mb-4">
+          <h6 class="fw-bold">Kontakt</h6>
+          <p>📞 <strong>+387 33 616 969</strong></p>
+          <p>📍 <a href="https://goo.gl/maps/NvH9L7g5zvB2" target="_blank" class="footer-link">Novo Sarajevo, Put Života 71000</a></p>
+          <p>🕒 Radno vrijeme: <br>PON – NED: 5:00 – 00:00</p>
+        </div>
+
+        <div class="col-md-2 mb-4">
+          <h6 class="fw-bold">Zapratite nas</h6>
+          <a href="#" class="me-2"><i class="fab fa-facebook fa-lg"></i></a>
+          <a href="#" class="me-2"><i class="fab fa-instagram fa-lg"></i></a>
+          <a href="#"><i class="fab fa-tiktok fa-lg"></i></a>
+        </div>
+
+        <div class="col-md-2 mb-4">
+          <h6 class="fw-bold">Zatraži meni</h6>
+          <form>
+            <input type="email" class="form-control mb-2" placeholder="Unesi email">
+            <button class="btn btn-success btn-sm w-100">Pošalji</button>
+          </form>
+        </div>
+      </div>
+
+      <hr class="bg-white opacity-25" />
+
+      <div class="text-center small">
+        &copy; 2025 Ćevabdžinica Zmaj – Sva prava zadržana. | <a href="#">Pravila privatnosti</a> | <a href="#">Uslovi korištenja</a>
+      </div>
     </div>
 </footer>

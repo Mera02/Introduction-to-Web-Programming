@@ -1,0 +1,1 @@
+const backendUrl = 'http://localhost/FarisMeric/Introduction-to-Web-Programming/backend';

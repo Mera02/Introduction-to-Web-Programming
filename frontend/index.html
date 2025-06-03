@@ -25,20 +25,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
-
 <body>
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container d-flex justify-content-between align-items-center">
             <a class="navbar-brand" href="#homepage">
                 <img src="assets/slike/logo.png" id="logo" alt="Logo">
             </a>
-    
-            
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#zmajMeni" aria-controls="zmajMeni" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-    
-            
+
             <div class="collapse navbar-collapse justify-content-center" id="zmajMeni">
                 <ul class="navbar-nav">
                     <li class="nav-item opcija">
@@ -50,9 +47,12 @@
                     <li class="nav-item opcija">
                         <a class="nav-link" href="#salate">SALATE & PRILOZI</a>
                     </li>
-                    <li class="nav-item opcija">
+                    <li class="nav-item opcija" id="nav-login">
                         <a class="nav-link" href="#forma">PRIJAVA</a>
                     </li>
+                    <li class="nav-item opcija" id="nav-register">
+                        <a class="nav-link" href="#register">REGISTRACIJA</a>
+                    </li>                                        
                     <li class="nav-item opcija">
                         <a class="nav-link" href="#zaposlise">ZAPOSLI SE</a>
                     </li>
@@ -61,15 +61,23 @@
                     </li>
                     <li class="nav-item opcija">
                         <a class="nav-link" href="#cart">KORPA</a>
-                      </li>                      
-                </ul>
+                    </li>
+                
+                    <li class="nav-item opcija" id="nav-profile" style="display: none;">
+                        <a class="nav-link" href="#profil">PROFIL</a>
+                    </li>
+
+                    <li class="nav-item opcija" id="nav-admin" style="display: none;">
+                        <a class="nav-link" href="#admin">ADMIN PANEL</a>
+                    </li>
+
+                    <li class="nav-item opcija" id="nav-logout-li" style="display: none;">
+                        <a href="#" id="nav-logout" class="nav-link" onclick="logoutUser()">LOGOUT</a>
+                    </li>                      
+                </ul>                
             </div>
         </div>
     </nav>
-    
-    
-    
-    
 
     <section id="pageContent">
         <main id="spapp" role="main">
@@ -81,15 +89,15 @@
             <section id="zaposlise" data-load="pages/zaposlise.html">Zaposli se</section>
             <section id="galerija" data-load="pages/galerija.html">Galerija</section>
             <section id="cart" data-load="pages/cart.html">Korpa</section>
+            <section id="profil" data-load="pages/profil.html">Profil</section>
+            <section id="admin" data-load="pages/admin.html">Admin Panel</section>
+            <section id="orders" data-load="pages/orders.html">Narudžbe</section>
+            <section id="admin-products" data-load="pages/admin-products.html">Admin Proizvodi</section>
+            <section id="admin-users" data-load="pages/admin-users.html">Admin Users</section>
         </main>
     </section>
 
-
-    
-    
-
-
-
+    <script src="assets/js/config.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.1.0.min.js"
         integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>

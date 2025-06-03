@@ -22,6 +22,11 @@ class ProductService extends BaseService {
         return parent::update($id, $product);
     }
 
+    public function add($product) {
+        $this->validateProduct($product);
+        return $this->dao->add($product);
+    }
+
     private function validateProduct($product) {
         if (!isset($product['name']) || strlen(trim($product['name'])) === 0) {
             throw new Exception("Product name is required.");

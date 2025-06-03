@@ -24,4 +24,8 @@ class CategoryService extends BaseService {
         $this->validateCategory($category);
         return parent::update($id, $category);
     }
+
+    public function getByName($name) {
+        return $this->dao->getByName($name);
+    }
 }

@@ -1,3 +1,13 @@
+<!-- LOGIN/LOGOUT UI Top Bar -->
+<div class="container text-end mt-2">
+  <span id="nav-welcome" class="me-3 text-success fw-bold"></span>
+  <a href="#login" id="nav-login" class="btn btn-outline-success btn-sm me-2">Prijava</a>
+  <a href="#register" id="nav-register" class="btn btn-outline-success btn-sm me-2">Registracija</a>
+  <button id="nav-logout" onclick="logoutUser()" class="btn btn-danger btn-sm me-2" style="display: none;">Odjava</button>
+</div>
+
+
+
 <section class="hero-section">
     <div class="hero-overlay">
       <div class="container text-center">
@@ -37,6 +47,12 @@
       <div class="text-center mt-4">
         <a href="#porcije" class="btn btn-outline-success">Pogledaj sve ponude &rarr;</a>
       </div>
+
+      <div class="text-center mt-4 admin-only" style="display: none;">
+        <button class="btn btn-warning">Dodaj novi proizvod (Admin)</button>
+      </div>
+      
+
     </div>
   </section>
   

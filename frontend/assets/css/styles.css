@@ -5,8 +5,16 @@ html{
 body{
     margin: 0;
     padding: 0;
-    overflow-x: hidden; 
+    overflow-x: hidden;
+    font-family: 'Poetsen One', sans-serif;
 }
+
+/*admin panel*/
+#admin-products {
+  padding-top: 100px; /* ili manje ako hoćeš manji razmak */
+}
+
+
 
 
 /* navbar */
@@ -73,6 +81,26 @@ body{
         align-items: flex-start;
     }
 }
+
+
+
+
+#nav-logout {
+    font-family: 'Poetsen One', sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    text-decoration: none !important; /* skini underline */
+    transition: all 0.3s ease;
+  }
+  
+  #nav-logout:hover {
+    color: #ffeaa7;
+    transform: scale(1.05);
+    text-decoration: none !important;
+  }
+  
 
 
 
@@ -404,6 +432,9 @@ body{
 }
 
 
+/*milestone 4 salate*/
+
+
 
 
 
@@ -715,6 +746,129 @@ body{
 #contactForm {
     margin-top: 60px;
 }
+
+
+/* === LOGIN FORMA === */
+.login-section {
+    padding: 130px 0 60px 0; /* Bio 100px – sada 130px */
+    background-color: #f8f9fa;
+    font-family: 'Poetsen One', sans-serif;
+  }
+  
+  
+  #loginForm {
+    background: white;
+    border-radius: 12px;
+    padding: 40px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  #loginForm h3 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2e7d32;
+    margin-bottom: 25px;
+  }
+  
+  #loginForm label {
+    font-weight: bold;
+    color: #343a40;
+    margin-bottom: 5px;
+  }
+  
+  #loginForm .form-control {
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  #loginForm .input-group .btn {
+    border-radius: 0 8px 8px 0;
+  }
+  
+  #loginForm button.btn-success {
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s ease;
+  }
+  
+  #loginForm button.btn-success:hover {
+    background-color: #388e3c;
+  }
+  
+  #loginForm .text-center a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  #loginForm .text-center a:hover {
+    text-decoration: underline;
+  }
+  
+  
+
+
+  /* Registracija */
+.registration-section {
+    padding: 130px 0 60px 0; /* Odmaknut vrh */
+    background-color: #f8f9fa;
+    font-family: 'Poetsen One', sans-serif;
+  }
+  
+  #registerForm {
+    background: white;
+    border-radius: 12px;
+    padding: 40px;
+    max-width: 650px;
+    margin: 0 auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  #registerForm h3 {
+    font-weight: bold;
+    color: #2e7d32;
+  }
+  
+  #registerForm .form-label {
+    font-weight: bold;
+    color: #343a40;
+  }
+  
+  #registerForm .form-control {
+    border-radius: 8px;
+    font-family: 'Poetsen One', sans-serif;
+  }
+  
+  #registerForm .btn-success {
+    padding: 10px;
+    font-weight: bold;
+    font-family: 'Poetsen One', sans-serif;
+    border-radius: 10px;
+  }
+  
+  #registerForm .btn-outline-secondary {
+    border-radius: 0 8px 8px 0;
+  }
+  
+  #registerForm .text-center p a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  #registerForm .text-center p a:hover {
+    text-decoration: underline;
+  }
+  
+
+
+
+
+
+
   
 #registerForm {
     margin-top: 60px;
@@ -1081,9 +1235,80 @@ body{
 }
 
 
+/* LOGOUT */
 
 
-  
+#nav-welcome {
+    font-size: 16px;
+    margin-right: 10px;
+    color: white;
+}
+#nav-logout:hover {
+    text-decoration: underline;
+}
+
+#nav-logout {
+    font-family: 'Poetsen One', sans-serif;
+}
+
+
+/*PROFIL HTML*/
+
+.profile-section {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+    font-family: 'Poetsen One', sans-serif;
+}
+
+.profile-card {
+    background: white;
+    border-radius: 12px;
+    padding: 40px;
+    max-width: 600px;
+    margin: 100px auto 40px auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.profile-heading {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #2e7d32;
+}
+
+.profile-subtext {
+    font-size: 16px;
+    color: #6c757d;
+    margin-bottom: 30px;
+}
+
+.profile-info p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.profile-actions {
+    margin-top: 30px;
+}
+
+.btn-edit, .btn-logout {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.btn-edit {
+    background-color: #ffc107;
+    color: white;
+}
+
+.btn-logout {
+    background-color: #dc3545;
+    color: white;
+}
 
 
 /*responsive*/

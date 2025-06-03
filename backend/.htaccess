@@ -1,8 +1,4 @@
-DirectoryIndex index.php
-
 RewriteEngine On
-RewriteBase /FarisMeric/Introduction-to-Web-Programming/backend/
-
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^ index.php [QSA,L]
